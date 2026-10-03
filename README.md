@@ -4,8 +4,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/flaxware/flaxware.github.io">
-    <img src="assets/logo.svg" alt="Logo" width="80" height="80">
+  <a href="https://github.com/flaxware/flax.system">
+    <img src="images/logo.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">FLAX SYSTEM</h3>
