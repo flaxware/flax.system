@@ -1,23 +1,50 @@
 # Flax OS💎
-"Turn your computer into supercomputer."
+> Turn your computer into a supercomputer.
 
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/flaxware/flaxware.github.io">
+    <img src="assets/logo.svg" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">FLAX SYSTEM</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://flaxware.github.io"><strong>Our website»</strong></a>
+    <br />
+    <br />
+    <a href="">View Demo</a>
+    &middot;
+    <a href="https://flaxware.github.io/#contact">Contact us</a>
+    &middot;
+    <a href="https://github.com/flaxware/flax.system/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
+  </p>
+</div>
+
+<!-- Description -->
 Flax OS is a complete Unix-like operating system based on Linux kernel engineered for users who demand advanced security and privacy without sacrificing usability and stability. It combines multiple proven cybersecurity paradigms into a single, cohesive platform while remaining suitable for everyday, general-purpose computing.
 
 By integrating isolation, anonymity, system hardening, and secure-by-default configurations, Flax OS aims to make strong security accessible to both professionals and privacy-conscious users.
 
-This page is all-in-one manual for our system.
+## Versions:
+ | **Version**            | **Build** |
+  |---|---|
+  | Flax OS 1 "Neo"            | BUILD28   |
 
+<!-- MANUAL -->
+This page is all-in-one manual for our system.
 ## Ideals:
 Our ideals are being:
-- General
-- Efficient
-- Perfect
-- Flexible
-- Portable
-- Safe
+- [General](https://github.com/flaxware/flax.system/#general)
+- [Efficient](https://github.com/flaxware/flax.system/#efficient)
+- [Perfect](https://github.com/flaxware/flax.system/#perfect)
+- [Flexible](https://github.com/flaxware/flax.system/#flexible)
+- [Portable](https://github.com/flaxware/flax.system/#portable)
+- [Safe](https://github.com/flaxware/flax.system/#safe)
 
-
-## Generality:
+## General:
 ### General-purpose ready:
 All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases.
 
@@ -28,7 +55,7 @@ Advanced security features are exposed in an accessible way, allowing both techn
 Flaxy Fenyx AI - is our AI.
 
 
-## Efficiency:
+## Efficient:
 ### Stability:
 Built to ensure reliability and stability, long-term support while giving rapid fixed releases, and access to a mature open-source software ecosystem.
 
@@ -39,12 +66,11 @@ FlaxTurbo - is TUI similar to:
 - Commander64
 - Turbo C
 
-
-## Perfection:
+## Perfect:
 Our system is a perfect set up with efficient solutions.
 
 
-## Flexibilty:
+## Flexible:
 ### Multi-Kernel architecture:
 Flax system is modular and hierarchical OS.
 - Flax OS using FlaxTurbo for minimizing RAM usage.
@@ -65,18 +91,27 @@ Can be edited using Bash scripting language, contains all system settings.
 - Binary package manager.
 - Choice or rolling or stable, as for single package or multiple packages.
 - Rollback support.
+- Use of cryptographic signatures.
+Examples:
+sudo superpkg install flax
+sudo superpkg remove flax
+sudo superpkg update flax
+sudo superpkg update
+sudo superpkg rollback
+sudo superpkg search flax
+sudo superpkg info flax
 
 
-## Portability:
+## Portable:
 ### Live & ephemeral Environments
 - Live-session workflows similar to Tails.
 - Optional non-persistent modes to avoid long-term data retention, persistent mode can be achived through FlaxBox.
 - Reduced forensic footprint through ephemeral system states, full RAM erasement.
 
 
-## Security:
-- Offense
-- Defense
+## Safe:
+- [Offense](https://github.com/flaxware/flax.system/#offense)
+- [Defense](https://github.com/flaxware/flax.system/#defense)
 We offer both, real security comes from understanding both sides.
 
 ### Offense:
@@ -93,7 +128,7 @@ Flax OS integrates concepts and technologies inspired by:
 - Kodachi — curated security and anonymity tools.
 - Parrot OS — Ingognito mode.
 
-### Privacy-focused by default
+### Privacy-focused by default:
 Designed to minimize data leakage through hardened defaults, secure networking, and strong encryption.
 
 ## Security architecture:
@@ -162,7 +197,7 @@ Contributions, suggestions, bug and vulnerability feedbacks are welcome.
 Please open issues for bugs, vulnerabilities and submit pull requests to help improve Flax OS.
 
 ## License:
-GPL
+[GPL](https://github.com/flaxware/flax.system/blob/main/LICENSE)
 
 Flax OS follows the licensing terms of GNU FSF included components.
 Refer to individual packages and files for specific license information.
