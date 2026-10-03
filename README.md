@@ -15,9 +15,9 @@
     <a href="https://flaxware.github.io"><strong>Our website»</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
-    &middot;
     <a href="https://flaxware.github.io/#contact">Contact us</a>
+    &middot;
+    <a href="https://github.com/flaxware/flax.system/blob/main/LICENSE">View license</a>
     &middot;
     <a href="https://github.com/flaxware/flax.system/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
   </p>
@@ -112,7 +112,7 @@ sudo superpkg info flax
 ## Safe:
 - [Offense](https://github.com/flaxware/flax.system/#offense)
 - [Defense](https://github.com/flaxware/flax.system/#defense)
-We offer both, real security comes from understanding both sides.
+> We offer both, real security comes from understanding both sides.
 
 ### Offense:
 Offensive security tools inspired by:
@@ -195,9 +195,3 @@ Flax OS is under active development. Features, architecture, and documentation m
 ## Contributing:
 Contributions, suggestions, bug and vulnerability feedbacks are welcome.
 Please open issues for bugs, vulnerabilities and submit pull requests to help improve Flax OS.
-
-## License:
-[GPL](https://github.com/flaxware/flax.system/blob/main/LICENSE)
-
-Flax OS follows the licensing terms of GNU FSF included components.
-Refer to individual packages and files for specific license information.
