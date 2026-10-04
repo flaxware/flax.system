@@ -92,15 +92,36 @@ Can be edited using Bash scripting language, contains all system settings.
 - Choice or rolling or stable, as for single package or multiple packages.
 - Rollback support.
 - Use of cryptographic signatures.
-Examples:
-sudo superpkg install flax
-sudo superpkg remove flax
-sudo superpkg update flax
-sudo superpkg update
-sudo superpkg rollback
-sudo superpkg search flax
-sudo superpkg info flax
 
+Examples:
+```
+sudo superpkg install flax
+```
+> ⬆️TO INSTALL SPECIFIC SOFTWARE⬆️
+```
+sudo superpkg remove flax
+```
+> ⬆️TO REMOVE SPECIFIC SOFTWARE⬆️
+```
+sudo superpkg update flax
+```
+> ⬆️TO UPDATE SPECIFIC SOFTWARE⬆️
+```
+sudo superpkg update
+```
+> ⬆️TO UPDATE SOFTWARE⬆️
+```
+sudo superpkg rollback
+```
+> ⬆️TO ROLLBACK SOFTWARE⬆️
+```
+sudo superpkg search flax
+```
+> ⬆️TO SEARCH SPECIFIC SOFTWARE⬆️
+```
+sudo superpkg info flax
+```
+> ⬆️TO GET INFO ABOUT SPECIFIC SOFTWARE⬆️
 
 ## Portable:
 ### Live & ephemeral Environments
