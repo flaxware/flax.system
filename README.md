@@ -28,13 +28,16 @@ Flax OS is a complete Unix-like operating system based on Linux kernel engineere
 
 By integrating isolation, anonymity, system hardening, and secure-by-default configurations, Flax OS aims to make strong security accessible to both professionals and privacy-conscious users.
 
+---
 ## Versions:
+
  | **Version**            | **Latest build** |
   |---|---|
   | Flax OS 1 "Neo"            | BUILD28   |
 
+---
 <!-- MANUAL -->
-This page is all-in-one manual for our system.
+This page is all-in-one [manual](https://www.mclibre.org/descargar/docs/manuales/the-linux-command-line-v6-202411.pdf) for our system.
 ## Ideals:
 Our ideals are being:
 - [General](https://github.com/flaxware/flax.system/#general)
@@ -44,17 +47,31 @@ Our ideals are being:
 - [Portable](https://github.com/flaxware/flax.system/#portable)
 - [Safe](https://github.com/flaxware/flax.system/#safe)
 
+---
 ## General:
-### General-purpose ready:
-All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases.
+All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases; Advanced security features are exposed in an accessible way, allowing both technical and non-technical users to benefit without complex configuration.
 
-### User-friendly experience:
-Advanced security features are exposed in an accessible way, allowing both technical and non-technical users to benefit without complex configuration.
+### Media tools:
+**Office:**
+*LibreOffice*
+
+**Text:**
+*MousePad*
+
+**Image:**
+*GIMP, InkScape*
+
+**Video:**
+*OpenShot*
+
+**Audio:**
+*Audacity*
+
 
 ### AI:
-Flaxy Fenyx AI - is our AI.
+**[Flaxy Fenyx AI](https://github.com/flaxware/flaxy.fenyx.ai)** - is our AI.
 
-
+---
 ## Efficient:
 ### Stability:
 Built to ensure reliability and stability, long-term support while giving rapid fixed releases, and access to a mature open-source software ecosystem.
@@ -62,12 +79,16 @@ Built to ensure reliability and stability, long-term support while giving rapid 
 ### Hardware support:
 We try to support old hardware very well, make old modern new.
 
+---
 ## Perfect:
 Our system is a perfect set up with efficient solutions.
 ### User interface:
-[FlaXFce-trinity](https://github.com/flaxware/flaxfce-trinity)
+**[FlaXFce-trinity](https://github.com/flaxware/flaxfce-trinity)** - *xfce* enhance by configuration and *aqua* theming , *xfce* by itself is designed to embody traditional Unix philosophy of modularity and reusability includes:
+- Theme
+- UI configuration
 
 ### System hardening:
+- Configured ready to go UI.
 - Hardened kernel configuration and secure system defaults.
 - Strict permission models and reduced attack surface.
 
@@ -85,48 +106,58 @@ Flax system is modular and hierarchical OS.
 Flax OS allows to run windows executables using Wine, Proton and dedicated technologies.
 
 ### Registry:
+Registry directory is */etc*
 Can be edited using Bash scripting language, contains all system settings.
 
-### 
-superpkg / xpkg:
+### Packaging:
+- **[superpkg / xpkg](https://github.com/flaxware/superpkg.xpkg)** - repository, *apt* enhance,
 - superpkg is the command-line package manager, and xpkg is a file extension to install superpkg package executables through file manager like on MacOS or Windows.
 - Binary package manager.
 - Choice or rolling or stable, as for single package or multiple packages.
 - Rollback support.
 - Use of cryptographic signatures.
-
-Examples:
+---
+*Examples:*
 ```
 sudo superpkg install flax
 ```
-> ⬆️TO INSTALL SPECIFIC SOFTWARE⬆️
+⬆️TO INSTALL SPECIFIC SOFTWARE⬆️
+---
 ```
 sudo superpkg remove flax
 ```
-> ⬆️TO REMOVE SPECIFIC SOFTWARE⬆️
+⬆️TO REMOVE SPECIFIC SOFTWARE⬆️
+---
 ```
 sudo superpkg update flax
 ```
-> ⬆️TO UPDATE SPECIFIC SOFTWARE⬆️
+⬆️TO UPDATE SPECIFIC SOFTWARE⬆️
+---
 ```
 sudo superpkg update
 ```
-> ⬆️TO UPDATE SOFTWARE⬆️
+⬆️TO UPDATE SOFTWARE⬆️
+---
 ```
 sudo superpkg rollback
 ```
-> ⬆️TO ROLLBACK SOFTWARE⬆️
+⬆️TO ROLLBACK SOFTWARE⬆️
+---
 ```
 sudo superpkg search flax
 ```
-> ⬆️TO SEARCH SPECIFIC SOFTWARE⬆️
+⬆️TO SEARCH SPECIFIC SOFTWARE⬆️
+---
 ```
 sudo superpkg info flax
 ```
-> ⬆️TO GET INFO ABOUT SPECIFIC SOFTWARE⬆️
+⬆️TO GET INFO ABOUT SPECIFIC SOFTWARE⬆️
+---
 
 ## Portable:
+Flax is a highly modular system with hierarchy, software repositories separate it's components into multiple packages.
 ### Modularity:
+
 
 ### Hierarchy:
 
@@ -140,6 +171,7 @@ sudo superpkg info flax
 - [Offense🔴](https://github.com/flaxware/flax.system/#offense)
 - [Defense🔵](https://github.com/flaxware/flax.system/#defense)
 > We offer both, real security comes from understanding both sides.
+*One of the reasons why our logo is purple*
 
 ### Offense:
 Offensive security tools inspired by:
@@ -148,6 +180,7 @@ Offensive security tools inspired by:
 
 ### Defense:
 ### Security-first design:
+In the Unix security model, a user may own files and directories.
 Designed to minimize data leakage through hardened defaults, secure networking, and strong encryption. Integrates concepts and technologies inspired by:
 - Qubes OS — compartmentalization and workload isolation.
 - Tails — live OS and non-persistent privacy workflows.
@@ -158,12 +191,14 @@ Designed to minimize data leakage through hardened defaults, secure networking, 
 ## Security architecture:
 Flax OS follows a defense-in-depth security model, layering multiple protections to reduce attack surfaces and limit the impact of potential compromises.
 
+---
 ### Security & privacy tooling:
 - **[FlaxDefender](https://github.com/flaxware/flaxdefender)**
 > Centralized security center, through there you can control firewall rules, Tor routing, metadata cleaning, system monitoring, anti-virus and so on.
 - Full-disk encryption and encrypted user data by default.
 - Modern cryptographic standards for storage and communication.
 - Secure credential and key management practices.
+---
 - **[FlaxBox](https://github.com/flaxware/flaxbox)**
 > Envisioned for managing encrypted, isolated environments such and user data. A Knox-like technology, allows users to manage security-related components such as containers and virtual machines, can be injected with USB or just kept on a computer, the container is fully encyptable, after you eject a box, the RAM block of box itself gets erased.
 - Application and service isolation inspired by Qubes OS and Knox principles.
@@ -171,6 +206,7 @@ Flax OS follows a defense-in-depth security model, layering multiple protections
 - Least-privilege execution to prevent lateral movement.
 - Pre-installed and curated security tools inspired by Kodachi.
 - Encryption utilities for data at rest and in transit.
+---
 - **[FlaxNet](https://github.com/flaxware/flaxnet)**
 > Tor, VPN, Proxy, Torrent and full gateway technology.
 - Optional Whonix gateway architecture to isolate network traffic.
@@ -182,15 +218,36 @@ Flax OS follows a defense-in-depth security model, layering multiple protections
 - Balanced automation to prevent misconfiguration.
 - Security features designed to be understandable and controllable.
 
-
+---
 ## Philosophy:
-Flax system is god's third temple rebuild from ashes. Unix philosophy
+Flax system is god's third temple rebuild from ashes (Temple OS reference). Unix philosophy implementation.
+The idea for [ideals](https://github.com/flaxware/flax.system#ideals) comes from C++;
+- The use of plain text for storing data;
+- Hierarchical file system;
 
+---
+### Standard X:
+In ancient Unix the *sticky bit* (octal 1000) now has a holdover in Flax, it was possible (in ancient Unix) to mark executable file "not swapable", kernel ignores the *sticky bit*, but if applied to directory, it prevents flexible users from deleting or renaming files.
+
+---
+Using *ps* options without the leading dash invokes the command with "BSD style" behavior. The Linux version of the *ps* program found in several different Unix implementations.
+
+---
+*top* is better than the graphical versions or *htop* because it is faster than and it consumes far less system resources. After all our monitor program shouldn't be the source of shutdown we are trying to find, that's why we didn't include *htop* but we still included *xfce4-taskmanager* for Windows familiar users.
+
+### Special keys:
+- **Super key** instead of Win key.
+- **Menu key** is language switching key.
+- **Meta key** is name for right Alt; We kept name due to historical reasons.
+- **Uni key** is name for right Ctrl key; Keeps the screen awake until you press it again.
+
+---
 ## Project goals:
 - Deliver a secure-by-default hybrid of UNIX and Unix-like standarts.
 - Make advanced cybersecurity concepts accessible to a wider audience.
 - Provide a reliable platform for secure computing and everyday use.
 
+---
 ## Target audience:
 - Privacy-conscious users.
 - Security and Unix developers and researchers.
