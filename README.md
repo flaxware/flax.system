@@ -15,11 +15,11 @@
     <a href="https://flaxware.github.io"><strong>Our website»</strong></a>
     <br />
     <br />
-    <a href="https://flaxware.github.io/#contact">Contact us</a>
+    <a href="https://github.com/flaxware/flax.system/blob/main/README.md">Manual</a>
     &middot;
     <a href="https://github.com/flaxware/flax.system/blob/main/LICENSE">View license</a>
     &middot;
-    <a href="https://github.com/flaxware/flax.system/issues/new?labels=enhancement&template=feature-request---.md">Request feature</a>
+    <a href="https://flaxware.github.io/#contact">Contact us</a>
   </p>
 </div>
 
@@ -29,7 +29,7 @@ Flax OS is a complete Unix-like operating system based on Linux kernel engineere
 By integrating isolation, anonymity, system hardening, and secure-by-default configurations, Flax OS aims to make strong security accessible to both professionals and privacy-conscious users.
 
 ## Versions:
- | **Version**            | **Build** |
+ | **Version**            | **Latest build** |
   |---|---|
   | Flax OS 1 "Neo"            | BUILD28   |
 
