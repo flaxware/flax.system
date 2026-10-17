@@ -46,7 +46,7 @@ Our ideals are being:
 - [Flexible](https://github.com/flaxware/flax.system/#flexible)
 - [Portable](https://github.com/flaxware/flax.system/#portable)
 - [Safe](https://github.com/flaxware/flax.system/#safe)
-
+> [Philosophy](https://github.com/flaxware/flax.system/#philosophy)
 ---
 ## General:
 All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases; Advanced security features are exposed in an accessible way, allowing both technical and non-technical users to benefit without complex configuration.
@@ -104,63 +104,29 @@ Flax system is modular and hierarchical OS.
 
 ### Windows compatibility layer:
 Flax OS allows to run windows executables using Wine, Proton and dedicated technologies.
+- *Q4Wine* as GUI for Wine
 
 ### Registry:
 Registry directory is */etc*
 Can be edited using Bash scripting language, contains all system settings.
 
 ### Packaging:
-- **[superpkg / xpkg](https://github.com/flaxware/superpkg.xpkg)** - repository, *apt* enhance,
-- superpkg is the command-line package manager, and xpkg is a file extension to install superpkg package executables through file manager like on MacOS or Windows.
-- Binary package manager.
-- Choice or rolling or stable, as for single package or multiple packages.
-- Rollback support.
-- Use of cryptographic signatures.
----
-*Examples:*
-```
-sudo superpkg install flax
-```
-⬆️TO INSTALL SPECIFIC SOFTWARE⬆️
----
-```
-sudo superpkg remove flax
-```
-⬆️TO REMOVE SPECIFIC SOFTWARE⬆️
----
-```
-sudo superpkg update flax
-```
-⬆️TO UPDATE SPECIFIC SOFTWARE⬆️
----
-```
-sudo superpkg update
-```
-⬆️TO UPDATE SOFTWARE⬆️
----
-```
-sudo superpkg rollback
-```
-⬆️TO ROLLBACK SOFTWARE⬆️
----
-```
-sudo superpkg search flax
-```
-⬆️TO SEARCH SPECIFIC SOFTWARE⬆️
----
-```
-sudo superpkg info flax
-```
-⬆️TO GET INFO ABOUT SPECIFIC SOFTWARE⬆️
----
+- **[superpkg / xpkg](https://github.com/flaxware/superpkg.xpkg)**
+- *apt*
+- *.deb* with *gdebi*
+- *Synaptic*
+- *GNOME software store*
 
 ## Portable:
 Flax is a highly modular system with hierarchy, software repositories separate it's components into multiple packages.
 ### Modularity:
+We are putting effort into making components reusable on other systems.
 
-
+---
 ### Hierarchy:
+File systems and repositories are made in tree-like architecture.
 
+---
 ### Live boot:
 - Live-session workflows similar to Tails.
 - Optional non-persistent modes to avoid long-term data retention, persistent mode can be achived through FlaxBox.
