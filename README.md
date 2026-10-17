@@ -15,7 +15,7 @@
     <a href="https://flaxware.github.io"><strong>Our website»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/flaxware/flax.system/blob/main/README.md">Manual</a>
+    <a href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Download</a>
     &middot;
     <a href="https://github.com/flaxware/flax.system/blob/main/LICENSE">View license</a>
     &middot;
