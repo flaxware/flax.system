@@ -51,12 +51,18 @@ Our ideals are being:
 ## General:
 All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases; Advanced security features are exposed in an accessible way, allowing both technical and non-technical users to benefit without complex configuration.
 
-### Media tools:
+### Media creation tools:
+- Use *mousepad* and *vim* as IDE.
+
+<details>
+<summary>Media packages</summary>
+
 **Office:**
 *LibreOffice*
 
 **Text:**
-*MousePad*
+*mousepad, vim*
+
 
 **Image:**
 *GIMP, InkScape*
@@ -67,9 +73,12 @@ All at once software in a form of a system, suitable for daily tasks such as bro
 **Audio:**
 *Audacity*
 
+</details>
 
-### AI:
-**[Flaxy Fenyx AI](https://github.com/flaxware/flaxy.fenyx.ai)** - is our AI.
+### Internet & AI:
+- *Tor browser*
+- **[Fenyx browser](https://github.com/flaxware/fenyx)**
+- **[Flaxy Fenyx AI](https://github.com/flaxware/flaxy.fenyx.ai)**
 
 ---
 ## Efficient:
@@ -94,8 +103,7 @@ Our system is a perfect set up with efficient solutions.
 
 ## Flexible:
 ### Multi-Kernel architecture:
-Flax system is modular and hierarchical OS.
-- Flax OS using FlaxTurbo for minimizing RAM usage.
+[Flax is modular and hierarchical system.](https://github.com/flaxware/flax.system/#portable)
 - This subsystem may be used for specialized networking and isolation function.
 - Subsystem running in VM/Container while sharing communication layer.
 - Kernel module for communication layer and kernel control.
@@ -122,17 +130,15 @@ Flax is a highly modular system with hierarchy, software repositories separate i
 ### Modularity:
 We are putting effort into making components reusable on other systems.
 
----
 ### Hierarchy:
 File systems and repositories are made in tree-like architecture.
 
----
 ### Live boot:
 - Live-session workflows similar to Tails.
 - Optional non-persistent modes to avoid long-term data retention, persistent mode can be achived through FlaxBox.
 - Reduced forensic footprint through ephemeral system states, full RAM erasement.
 
-
+---
 ## Safe:
 - [Offense🔴](https://github.com/flaxware/flax.system/#offense)
 - [Defense🔵](https://github.com/flaxware/flax.system/#defense)
@@ -191,15 +197,8 @@ The idea for [ideals](https://github.com/flaxware/flax.system#ideals) comes from
 - The use of plain text for storing data;
 - Hierarchical file system;
 
----
 ### Standard X:
-In ancient Unix the *sticky bit* (octal 1000) now has a holdover in Flax, it was possible (in ancient Unix) to mark executable file "not swapable", kernel ignores the *sticky bit*, but if applied to directory, it prevents flexible users from deleting or renaming files.
-
----
-Using *ps* options without the leading dash invokes the command with "BSD style" behavior. The Linux version of the *ps* program found in several different Unix implementations.
-
----
-*top* is better than the graphical versions or *htop* because it is faster than and it consumes far less system resources. After all our monitor program shouldn't be the source of shutdown we are trying to find, that's why we didn't include *htop* but we still included *xfce4-taskmanager* for Windows familiar users.
+In ancient Unix the *sticky bit* (octal 1000) now has a holdover in Flax, it was possible (in ancient Unix) to mark executable file "not swapable", kernel ignores the *sticky bit*, but if applied to directory, it prevents flexible users from deleting or renaming files; Using *ps* options without the leading dash invokes the command with "BSD style" behavior. The Linux version of the *ps* program found in several different Unix implementations; *top* is better than the graphical versions or *htop* because it is faster than and it consumes far less system resources. After all our monitor program shouldn't be the source of shutdown we are trying to find, that's why we didn't include *htop* but we still included *xfce4-taskmanager* for Windows familiar users.
 
 ### Special keys:
 - **Super key** instead of Win key.
