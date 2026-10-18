@@ -1,4 +1,4 @@
-# Flax OS💎
+# FLAX OS💎
 > *Turn your computer into a **supercomputer**.*
 
 <!-- PROJECT LOGO -->
