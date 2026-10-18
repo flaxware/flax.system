@@ -31,9 +31,9 @@ By integrating isolation, anonymity, system hardening, and secure-by-default con
 ---
 ## Versions:
 
- | **Version**            | **Latest build** |
-  |---|---|
-  | Flax OS 1 "Neo"            | BUILD28   |
+| **Version** | **Codename** | **Latest build** |
+|---|---|---|
+| FLAX SYSTEM I | Neo | BUILD28 |
 
 ---
 <!-- MANUAL -->
