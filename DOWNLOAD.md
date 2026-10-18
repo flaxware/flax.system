@@ -1,4 +1,4 @@
-# Flax OS💎
+# FLAX OS💎
 > Turn your computer into a supercomputer.
 
 <!-- PROJECT LOGO -->
@@ -29,4 +29,4 @@
   | Flax OS 1 "Neo"            | BUILD28   |
 
 # Download:
-
+### FLAX SYSTEM I:
