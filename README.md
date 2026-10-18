@@ -1,5 +1,5 @@
 # Flax OS💎
-> Turn your computer into a supercomputer.
+> *Turn your computer into a **supercomputer**.*
 
 <!-- PROJECT LOGO -->
 <br />
@@ -142,7 +142,7 @@ File systems and repositories are made in tree-like architecture.
 
 ### Offense:
 Offensive security tools inspired by:
-- Kali Linux — Metasploit, NMap, aircrack-ng and other tools.
+- Kali Linux — Metasploit, NMap, aircrack-ng, WireShark and other tools.
 - Black Arch — dedicated security tools.
 
 ### Defense:
@@ -184,7 +184,6 @@ Flax OS follows a defense-in-depth security model, layering multiple protections
 - Balanced automation to prevent misconfiguration.
 - Security features designed to be understandable and controllable.
 
----
 ## Philosophy:
 Flax system is god's third temple rebuild from ashes (Temple OS reference). Unix philosophy implementation.
 The idea for [ideals](https://github.com/flaxware/flax.system#ideals) comes from C++;
@@ -200,13 +199,12 @@ In ancient Unix the *sticky bit* (octal 1000) now has a holdover in Flax, it was
 - **Meta key** is name for right Alt; We kept name due to historical reasons.
 - **Uni key** is name for right Ctrl key; Keeps the screen awake until you press it again.
 
----
+
 ## Project goals:
 - Deliver a secure-by-default hybrid of UNIX and Unix-like standarts.
 - Make advanced cybersecurity concepts accessible to a wider audience.
 - Provide a reliable platform for secure computing and everyday use.
 
----
 ## Target audience:
 - Privacy-conscious users.
 - Security and Unix developers and researchers.
