@@ -28,14 +28,12 @@ Flax OS is a complete Unix-like operating system based on Linux kernel engineere
 
 By integrating isolation, anonymity, system hardening, and secure-by-default configurations, Flax OS aims to make strong security accessible to both professionals and privacy-conscious users.
 
----
 ## Versions:
 
 | **Version** | **Codename** | **Latest build** |
 |---|---|---|
 | FLAX SYSTEM I | Neo | BUILD28 |
 
----
 <!-- MANUAL -->
 This page is all-in-one [manual](https://www.mclibre.org/descargar/docs/manuales/the-linux-command-line-v6-202411.pdf) for our system.
 ## Ideals:
@@ -47,7 +45,7 @@ Our ideals are being:
 - [Portable](https://github.com/flaxware/flax.system/#portable)
 - [Safe](https://github.com/flaxware/flax.system/#safe)
 > [Philosophy](https://github.com/flaxware/flax.system/#philosophy)
----
+
 ## General:
 All at once software in a form of a system, suitable for daily tasks such as browsing, development, creativity and productivity, alongside security-focused use cases; Advanced security features are exposed in an accessible way, allowing both technical and non-technical users to benefit without complex configuration.
 
@@ -80,7 +78,6 @@ All at once software in a form of a system, suitable for daily tasks such as bro
 - **[Fenyx browser](https://github.com/flaxware/fenyx)**
 - **[Flaxy Fenyx AI](https://github.com/flaxware/flaxy.fenyx.ai)**
 
----
 ## Efficient:
 ### Stability:
 Built to ensure reliability and stability, long-term support while giving rapid fixed releases, and access to a mature open-source software ecosystem.
@@ -88,11 +85,10 @@ Built to ensure reliability and stability, long-term support while giving rapid 
 ### Hardware support:
 We try to support old hardware very well, make old modern new.
 
----
 ## Perfect:
 Our system is a perfect set up with efficient solutions.
 ### User interface:
-**[FlaXFce-trinity](https://github.com/flaxware/flaxfce-trinity)** - *xfce* enhance by configuration and *aqua* theming , *xfce* by itself is designed to embody traditional Unix philosophy of modularity and reusability includes:
+- **[xfce-trinity](https://github.com/flaxware/xfce-trinity)** - *xfce* enhance by configuration and *aqua* theming , *xfce* by itself is designed to embody traditional Unix philosophy of modularity and reusability includes:
 - Theme
 - UI configuration
 
@@ -138,7 +134,6 @@ File systems and repositories are made in tree-like architecture.
 - Optional non-persistent modes to avoid long-term data retention, persistent mode can be achived through FlaxBox.
 - Reduced forensic footprint through ephemeral system states, full RAM erasement.
 
----
 ## Safe:
 - [Offense🔴](https://github.com/flaxware/flax.system/#offense)
 - [Defense🔵](https://github.com/flaxware/flax.system/#defense)
@@ -163,7 +158,6 @@ Designed to minimize data leakage through hardened defaults, secure networking, 
 ## Security architecture:
 Flax OS follows a defense-in-depth security model, layering multiple protections to reduce attack surfaces and limit the impact of potential compromises.
 
----
 ### Security & privacy tooling:
 - **[FlaxDefender](https://github.com/flaxware/flaxdefender)**
 > Centralized security center, through there you can control firewall rules, Tor routing, metadata cleaning, system monitoring, anti-virus and so on.
