@@ -1,40 +1,25 @@
-# FLAX SYSTEM ROADMAP
+# FLAX.SYS LEGEND
 
-> A dream roadmap for the real universal Unix-like operating system.
-> Built from the Flax philosophy: general, efficient, perfect, flexible, portable, safe.
+> FLAX SYSTEM I cycle: 2026–2031
+> FLAX SYSTEM II (UNIX): first full universal Unix-class platform
 >
-> This document is intentionally ambitious. It describes the full architecture, product ecosystem, engineering plan, and long-term vision for turning Flax OS into a universal system that can be used by humans, developers, security teams, and enterprises without sacrificing simplicity, security, or control.
+> This roadmap is not a toy plan. It is the architectural path to a real operating system family that can one day become a serious alternative to the mainstream Linux world.
 
-## 1. Mission
-
-FLAX SYSTEM aims to become a complete, secure, portable, Unix-like operating system that is:
-
-- general-purpose enough for everyday use,
-- efficient enough for old and new hardware,
-- flexible enough to be reconfigured by plain text,
-- portable enough to run across varied environments,
-- safe enough to defend privacy and systems by default,
-- coherent enough to feel like a true operating system and not just a collection of apps.
-
-The goal is not to be a Debian clone or a Linux distribution shaped by existing packaging habits. The goal is to define a proper system architecture that can become a universal platform.
+```cpp
+namespace flax::system {
+  // A system built like a temple.
+  // Clear. Secure. Portable. Hierarchical. Honest.
+  // Designed to outlive distro churn.
+}
+```
 
 ---
 
-## 2. Core philosophy
+## 1. Mission Statement
 
-Flax is built around a modern Unix doctrine:
+FLAX is the rebirth of the Unix dream in a modern world of bloated software, insecure defaults, hidden complexity, and fragile distro logic.
 
-- plain text configuration
-- hierarchical filesystem design
-- composable packages and repositories
-- minimalism with power
-- security by default
-- user responsibility without unnecessary complexity
-- modularity over monoliths
-- practical privacy and hardening
-- flexibility through configuration instead of hidden abstraction
-
-### The ideals
+Our mission is to build a universal operating system family that is:
 
 - General
 - Efficient
@@ -43,1112 +28,751 @@ Flax is built around a modern Unix doctrine:
 - Portable
 - Safe
 
-### The design doctrine
+The final ambition is not to become "just another Linux distro".
+The final ambition is to become a trustable, standards-aware, secure, modular, and usable Unix-class system that can stand beside the broader Linux ecosystem while preserving its own philosophy.
 
-- Accept the Unix model, but evolve it.
-- Prefer explicit configuration over magic.
-- Prefer clear interfaces over hidden state.
-- Prefer small, modular components.
-- Prefer minimal attack surface.
-- Prefer human-readable system state.
-- Prefer reproducible builds and signed artifacts.
-- Prefer tools that can be reasoned about in plain text.
-
----
-
-## 3. Long-term strategic vision
-
-FLAX SYSTEM is not just a Linux distro. It is a system family.
-
-The long term target is:
-
-- a desktop OS
-- a server OS
-- a secure gateway OS
-- a privacy-focused live system
-- a hardened kiosk or workstation OS
-- a developer environment
-- a security research OS
-- a portable system family usable across machines and groups
-
-The imagined end state is a universal Unix system that can be:
-
-- installed on personal laptops
-- deployed to enterprise machines
-- used as a secure gateway
-- used as a live boot system for privacy
-- used by security teams
-- used as a developer workstation
-- used as a command-line-first Unix environment
-
-This is the “real universal system” ambition.
+```cpp
+class FLAX : public UnixDream {
+public:
+  std::string ideal = "General, Efficient, Perfect, Flexible, Portable, Safe";
+  std::string mission = "Build a universal trusted operating system family";
+  std::string destiny = "Become the new temple of the Unix idea";
+};
+```
 
 ---
 
-## 4. Product architecture vision
+## 2. The Holy Principle
 
-The FLAX ecosystem should be organized as a stack of coherent products, each responsible for a specific layer.
+We do not start from Debian live-build and say "this is the system".
+We start from the system itself.
 
-### 4.1 Core system layer
+The FLAX architecture is designed to replace the weak idea of distro layering with a real design:
 
-- Flax OS
-- Flax base root filesystem
-- bootloader and kernel config
-- service model
-- secure defaults
-- installer and recovery tooling
+- system-build as the native distro assembly engine
+- superpkg / xpkg as the canonical package interface
+- ultrapkg as the modern package engine
+- standard-x as the compatibility and Unix philosophy layer
+- flaxdefender / flaxbox / flaxnet as the security and isolation layer
+- xfce-trinity / fenyx / flaxy.fenyx.ai as the user environment layer
 
-### 4.2 Package and repository layer
+This is the real difference. FLAX is a system architecture, not just a desktop theme with a repo.
 
-- superpkg / xpkg
+---
+
+## 3. The Temple Philosophy
+
+### 3.1 Ideals
+
+- General: everyday life, work, privacy, security, engineering
+- Efficient: low overhead, minimal bloat, stable performance
+- Perfect: ready to use, good defaults, clean structure
+- Flexible: plain-text config, modular userspace, composable components
+- Portable: repo layering, modular packages, hardware portability
+- Safe: hardening by default, least privilege, privacy-first workflows
+
+### 3.2 Standard X
+
+FLAX carries the spirit of classic Unix forward:
+
+- plain text configuration
+- hierarchy over chaos
+- explicit ownership and permissions
+- composable tools
+- clear service boundaries
+- readable system state
+- sane defaults instead of hidden magic
+- security as architecture, not addon
+
+```cpp
+struct StandardX {
+  plain_text_config = true;
+  hierarchy = true;
+  permission_model = "explicit";
+  tools_are_small = true;
+  security_is_core = true;
+  system_is_understandable = true;
+};
+```
+
+This is not a nostalgia project. It is a modern Unix standard for the next century.
+
+---
+
+## 4. What FLAX is building
+
+FLAX is intended to become a full operating system family, not a single niche distro.
+
+### 4.1 The OS core
+
+- flax.system
+- system-builder
+- flax-core (conceptual base layer)
+- flax-installer
+- flax-live
+- flax-releases
+
+### 4.2 Package layer
+
+- superpkg.xpkg
 - ultrapkg
-- package metadata and signing
-- repository model
-- rollback and dependency management
-- package ecosystem governance
+- ultrapkg-plus
+- superfetch
+- standart-x
 
-### 4.3 Security and isolation layer
+### 4.3 Security layer
 
-- FlaxDefender
-- FlaxBox
-- FlaxNet
-- sandbox and isolation utilities
-- encrypted user and app environment management
+- flaxdefender
+- flaxbox
+- flaxnet
+- flaxterminal
+- flax-security / flax-harden (logical extensions)
 
 ### 4.4 User experience layer
 
 - xfce-trinity
-- Fenyx browser
-- Flaxy AI assistant
-- desktop theming and workflows
-- usability improvements without compromising Unix simplicity
+- fxde
+- fenyx
+- flaxy.fenyx.ai
+- xsh
+- flaxwine
 
-### 4.5 Research and future layer
+### 4.5 Platform and future extension layer
 
-- new kernel / subsystem experiments
-- multi-kernel architecture testing
-- networking isolation stacks
-- virtualization and sandbox orchestration
-- compatibility layers for Windows software
+- flaxdroid
+- flaxgo
+- flaxgo.onion
+- crystalix
+- aqua-nitro
+- super-c
 
----
+### 4.6 Standards layer
 
-## 5. Package manager strategy: superpkg and ultrapkg
-
-The package system is the heart of the system.
-
-### 5.1 Why superpkg matters
-
-superpkg should become the native package manager for FLAX. It should not just be an app installer. It should be the package contract for the system.
-
-It should own:
-
-- package metadata
-- dependency resolution
-- package repo trust
-- installation workflow
-- hooks and post-install scripts
-- config file handling
-- system state transitions
-- package transactions
-- rollback support
-- version tracking
-- metadata integrity
-
-### 5.2 Why ultrapkg matters
-
-ultrapkg is the futuristic evolution of the package system.
-
-It should be the high-performance, modern package engine for:
-
-- repository operations
-- package indexing
-- dependency solving
-- package signatures
-- isolated builds
-- immutable or transactional installs
-- fine-grained system updates
-- offline package bundles
-- rollback and recovery snapshots
-
-#### ultrapkg responsibilities
-
-- manage package repositories in a structured, signed format
-- resolve dependency graphs efficiently
-- track file manifests and content hashes
-- support stacked package layers
-- support transactional installs
-- support upgrade and downgrade safely
-- support partial-system recovery
-- support “system state” snapshots
-- integrate with OS update lifecycle
-
-### 5.3 Package format design
-
-A good FLAX package format should include:
-
-- package name
-- version
-- architecture
-- description
-- maintainer
-- source origin
-- dependency list
-- conflicts
-- recommends
-- optional bundles
-- file manifest
-- checksums
-- signature
-- install/uninstall scripts
-- system integration metadata
-
-### 5.4 Repository design
-
-Repository structure:
-
-- core
-- base
-- desktop
-- dev
-- security
-- network
-- multimedia
-- community
-- experimental
-- unstable
-
-Metadata:
-
-- release metadata signed
-- package index signed
-- dependency graph signed
-- package manifests signed
-- timestamped repo snapshots
-
-### 5.5 Security of the package layer
-
-- packages are signed at build time
-- repo metadata is signed
-- package signature verification is mandatory
-- optional reproducible builds
-- install hooks run with strict limits
-- config file updates are declarative
-- package mismatch detection is mandatory
-- rollback is supported by snapshots
+- standart-x
+- flax-compat
+- flax-docs
+- flax-harden
 
 ---
 
-## 6. System architecture roadmap
+## 5. The system-build strategy
 
-## Phase 0 — Define the system
+### 5.1 Why not only Debian live-build?
 
-### Goal
-Create the first real FLAX architecture spec.
+Debian live-build is a strong tool for a Debian-based live system.
+But it is not the correct identity for a designed-from-scratch universal OS.
 
-### Outputs
+FLAX needs its own distro assembly engine:
 
-- project charter
-- system ideals and principles
-- package manager architecture
-- repository model
-- filesystem layout
-- installation model
-- release model
-
-### Deliverables
-
-- FLAX SYSTEM specification document
-- package format specification
-- repo format specification
-- installer architecture
-- upgrade strategy
-- security baseline
-
-### Success criteria
-
-The team must agree on:
-
-- what FLAX is
-- what it is not
-- how packages work
-- how updates work
-- what the base system contains
-- how security defaults are enforced
-
----
-
-## Phase 1 — Build the base system
-
-### Goal
-Create a minimal, bootable, secure root filesystem.
-
-### Components
-
-- kernel
-- bootloader
-- init system
-- libc and standard tools
-- shell
-- base utilities
-- config directory structure
-- user management
-- package manager integration
-
-### Recommended initial design
-
-- x86_64 and amd64 first
-- ARM64 second
-- minimal kernel configuration
-- hardened defaults
-- no accidental desktop bloat
-- rootfs built in plain text and reproducible way
-
-### Milestones
-
-- bootable live minimal environment
-- package manager can install minimal base packages
-- user account works
-- networking works
-- basic shell environment works
-
-### Exit criteria
-
-A minimal system boots and can install packages without manual hacks.
-
----
-
-## Phase 2 — Package engine foundation
-
-### Goal
-Turn superpkg / ultrapkg into a real package system.
-
-### Tasks
-
-- define package metadata schema
-- define repo layout
-- define dependency solver
-- define install transaction behavior
-- define removal transaction behavior
-- define upgrades, downgrades, and rollback
-- define config-file merge strategy
-- define signature verification
-- define database format
-- define package status model
-
-### Major subcomponents
-
-#### superpkg
-
-- base CLI experience
-- install, remove, update, search
-- repository management
-- transaction control
-- print output in simple human format
-
-#### ultrapkg
-
-- efficient package metadata indexes
-- distributed repository support
-- package signing and verification
-- optimized dependency graph solver
-- advanced transaction engine
-- rollback snapshots and package state tracking
-
-### Exit criteria
-
-The system can install packages from signed repos and recover from broken updates.
-
----
-
-## Phase 3 — Installer and lifecycle
-
-### Goal
-Make FLAX installable as an actual distro.
-
-### Components
-
-- disk partitioning logic
-- encryption options
-- UEFI/BIOS support
-- bootloader installation
-- user setup
-- system configuration
-- locale and keyboard setup
-- network setup
-- final package set install
-
-### Scope
-
-- live ISO boot
-- installer UI or TUI
-- manual partitioning
-- default autopartitioning
-- installer recovery entry
-- clean reinstall flow
-
-### Exit criteria
-
-A user can install FLAX on a machine and boot into a working system with minimal manual steps.
-
----
-
-## Phase 4 — Security baseline
-
-### Goal
-Make FLAX a security-respecting distribution by default.
-
-### Security principles
-
-- least privilege
-- secure defaults
-- encryption by default where practical
-- no unsafe package permissions
-- minimal attack surface
-- sandboxing and isolation for sensitive workloads
-- read-only trust boundaries
-
-### Components
-
-- kernel hardening
-- secure boot support
-- firewall policy
-- service confinement
-- user separation
-- tmpfs isolation
-- encrypted user data
-- app sandboxing
-- audit logging defaults
-
-### Flax security stack
-
-- FlaxDefender
-  - security center
-  - firewall control
-  - system monitoring
-  - metadata cleaning
-  - privacy and system state control
-
-- FlaxBox
-  - encrypted isolated workspaces
-  - VM and container management
-  - secure user data management
-  - volatile environment support
-
-- FlaxNet
-  - Tor, VPN, gateway routing
-  - traffic separation
-  - privacy modes
-  - network isolation
-
-### Exit criteria
-
-The system is safe to use in privacy-sensitive and security-sensitive scenarios without making things unusable.
-
----
-
-## Phase 5 — Desktop and work environment
-
-### Goal
-Make FLAX a practical daily driver.
-
-### Components
-
-- XFCE Trinity theme and UX improvements
-- app selection for productivity
-- browser stack
-- office suite
-- media tools
-- dev tools
-- AI tooling
-- desktop configuration management
-
-### Products in this layer
-
-- xfce-trinity
-- Fenyx browser
-- Flaxy Fenyx AI
-- productivity and office software packages
-- creative workstation packages
-- lightweight but complete user environment
-
-### Exit criteria
-
-A user can do daily work: browsing, coding, media, documents, privacy work, and secure tasks without needing another distro.
-
----
-
-## Phase 6 — System composition and modularity
-
-### Goal
-Make FLAX a hierarchical, modular system family.
-
-### Features
-
-- service stacks
-- modular repository layers
-- isolated workloads
-- multi-kernel experimentation
-- VM and container integration
-- custom networking stack
-- live boot flexibility
-- ephemeral and persistent modes
-
-### Multi-kernel concept
-
-- dedicated subsystem kernels for network routing
-- isolated security domain support
-- microkernel-inspired modularity
-- communication layer between kernels
-
-### Exit criteria
-
-The system can support different workloads and security domains without turning into chaos.
-
----
-
-## Phase 7 — Reproducible builds and release engineering
-
-### Goal
-Turn FLAX from a handcrafted system into a proper engineering project.
-
-### Deliverables
-
-- reproducible build pipeline
-- artifact signing
-- versioned packages
+- system-build
+- reproducible assembly from package recipes and repo metadata
+- signed build artifacts
 - release channels
-- nightly builds
-- stable builds
-- LTS branches
-- rollback-ready release strategy
+- live media and installer generation
+- rootfs assembly and secure boot support
+- custom package layer integration
 
-### Build system requirements
+```cpp
+class SystemBuild {
+public:
+  void assemble_rootfs();
+  void generate_live_iso();
+  void generate_installer();
+  void sign_artifacts();
+  void publish_release();
+};
+```
 
-- source packaging and metadata
-- deterministic builds
-- package validation
-- repository sync automation
-- image build automation
-- hardware compatibility matrix
-
-### Exit criteria
-
-A release can be rebuilt from source in a consistent and verifiable way.
-
----
-
-## Phase 8 — Live system, privacy, and ephemeral workflows
-
-### Goal
-Make FLAX excellent as a live environment.
-
-### Features
-
-- live boot mode
-- persistent mode
-- ephemeral session mode
-- privacy-preserving defaults
-- no unnecessary long-term data retention
-- RAM cleansing workflows
-- safe media booting
-- forensic reduction strategies
-
-### Scope
-
-- Tails-like live environment with FLAX personality
-- secure live mode
-- encrypted persistence choices
-- multi-session user states
-
-### Exit criteria
-
-The system is usable in live mode and safe for privacy-sensitive tasks.
+This is the alternative to the old live-build pattern.
+This is the real native distro assembly engine.
 
 ---
 
-## Phase 9 — Enterprise and advanced use cases
+## 6. The package system
 
-### Goal
-Make FLAX useful for advanced and professional environments.
+### 6.1 superpkg.xpkg
 
-### Advanced use cases
+Main package manager.
 
-- workstation deployments
-- secure office environments
-- developer desktops
-- security analysts
-- privacy-focused researchers
-- gateway and networking roles
-- virtualized isolation workloads
-- encrypted environment management
+Responsibilities:
 
-### Enterprise integration
+- install / remove / upgrade / downgrade
+- dependency resolution
+- repo metadata handling
+- signed package verification
+- transaction tracking
+- rollback support
+- config file merge logic
+- package state integrity checks
 
-- configuration management support
-- controlled repositories
-- enterprise package mirrors
-- signed update policy
-- managed security profiles
-- audit and compliance-friendly defaults
+### 6.2 ultrapkg
 
-### Exit criteria
+Modern package engine.
 
-FLAX can support both everyday users and enterprise/security-driven users without losing simplicity.
+Responsibilities:
 
----
+- faster metadata indexing
+- repo snapshot management
+- transactional install semantics
+- deterministic dependency graphs
+- safe update logic
+- rollback states and recovery
+- package provenance tracking
 
-## Phase 10 — Unix conformance and certification roadmap
+### 6.3 ultrapkg-plus
 
-### Goal
-Elevate FLAX from “good Unix-like distribution” to a disciplined Unix-conforming ecosystem.
+Advanced packaging and policy layer.
 
-This is a long-term dream and strategic direction, not a claim of current certification status.
+Responsibilities:
 
-### Certification and conformance roadmap
+- local policy management
+- enterprise or managed repo support
+- optimization for huge package graphs
+- stricter validation and security profiles
+- offline or locked environment support
 
-1. POSIX-aligned behavior baseline
-   - shell behavior
-   - filesystem semantics
-   - command expectations
-   - process model
-   - user and permission model
-
-2. standards documentation and compatibility layer
-   - POSIX profile documentation
-   - FHS alignment
-   - XDG compliance
-   - LSB-like compatibility goals
-   - packaging standards mapping
-
-3. command and environment compatibility
-   - portable shell scripts
-   - standard binary paths
-   - standard tool chains
-   - predictable environment variables
-
-4. developer certification path
-   - compatibility lab
-   - test suites
-   - CI validation
-   - compatibility claims
-
-5. recognized certification effort
-   - open group style conformance work
-   - standards compliance documentation
-   - interoperability testing with Unix tools
-   - compatibility notes for software packaging
-
-### Important note
-
-This does not mean FLAX is required to imitate a legacy Unix exactly. It means FLAX should be built to be understandable, portable, and standards-aware while preserving its own modern architectural direction.
-
-### Exit criteria
-
-FLAX has a clear, documented conformance story and a credible path to Unix-compatible certification and ecosystem trust.
+This is the package architecture that gives FLAX a real system identity.
 
 ---
 
-## 7. FLAXWARE product roadmap
+## 7. The security architecture
 
-## 7.1 FLAX SYSTEM
+FLAX is designed to be secure by default.
 
-Main OS product and reference distribution.
+```cpp
+class FLAXSecurity {
+public:
+  bool secure_by_default = true;
+  bool encrypted_data = true;
+  bool hardened_kernel = true;
+  bool least_privilege = true;
+  bool isolated_workloads = true;
+  bool privacy_modes = true;
+};
+```
+
+### 7.1 FlaxDefender
+
+Central security center.
+
+- firewall control
+- system monitoring
+- metadata cleanup
+- hardened defaults
+- privacy presets
+- security awareness layer
+
+### 7.2 FlaxBox
+
+Encrypted workspace and isolation model.
+
+- secure containers
+- VM-like user environments
+- encrypted user data boundaries
+- safe ephemeral workspace usage
+
+### 7.3 FlaxNet
+
+Privacy and network interface.
+
+- Tor and VPN support
+- routing separation
+- DNS leak prevention
+- gateway model
+- traffic policy isolation
+
+### 7.4 FlaxTerminal
+
+Security-first CLI and shell workspace.
+
+- terminal-safe operations
+- strict service boundaries
+- command-level privacy and security helpers
+
+---
+
+## 8. The desktop and user experience
+
+FLAX is not just a security distro; it is a real daily computing system.
+
+### 8.1 xfce-trinity
+
+- polished Unix-like desktop
+- theming
+- practical productivity
+- minimal, familiar workflows
+
+### 8.2 fxde
+
+- additional desktop-oriented environment tooling
+- clean UI control surfaces
+
+### 8.3 fenyx
+
+- privacy-first browser
+- secure web layer
+
+### 8.4 flaxy.fenyx.ai
+
+- productivity and system intelligence layer
+- package recommendations
+- config help
+- command explanation
+- AI assistance without unnecessary weirdness
+
+### 8.5 xsh
+
+- terminal and shell ecosystem
+- better command-line experience
+
+### 8.6 flaxwine
+
+- Windows compatibility layer
+- pragmatic support for users needing Windows tools
+
+This is what makes FLAX viable for everyday users instead of only security specialists.
+
+---
+
+## 9. The Unix conformance path
+
+FLAX must become more than a distro. It must become a standards-aware system family.
+
+### 9.1 Standard targets
+
+- POSIX-aligned behavior baseline
+- FHS alignment
+- XDG conventions
+- LSB-like compatibility principles
+- SUS-style portability expectations
+- Unix shell and command semantics compatibility
+
+```cpp
+class UnixCertificationPath {
+public:
+  void align_posix();
+  void align_fhs();
+  void align_xdg();
+  void validate_shell_behavior();
+  void run_interop_tests();
+  void publish_conformance_report();
+};
+```
+
+### 9.2 Certification phases
+
+- Phase A: clean system model and path semantics
+- Phase B: portable shell and command semantics
+- Phase C: standards test matrix and CI validation
+- Phase D: published conformance reports
+- Phase E: real ecosystem trust and compatibility claims
+
+This is how FLAX moves from “Unix-like” to “Unix-class with truthful compatibility design.”
+
+---
+
+## 10. The build lifecycle over 5 years
+
+This roadmap is intentionally realistic, but bold.
+
+## 10.1 Year 1 — FLAX SYSTEM I foundation (2026)
+
+Target: shape the system, define the architecture, and build the base.
 
 ### Goals
 
-- define the default system experience
-- set hardening norms
-- provide a secure universal workstation
-- become the flagship distro
+- finalize FLAX philosophy and ideals
+- define system structure
+- lock architecture for build system
+- define package manager contract
+- design package metadata and repo model
+- select first supported architecture (x86_64 first, ARM64 second)
+- create the repository and codebase foundations
+
+### Deliverables
+
+- system-build prototype architecture
+- superpkg.xpkg base design
+- package metadata format
+- repo layout specification
+- secure build pipeline draft
+- initial rootfs plan
+
+### Expected state
+
+- a design document with real structure
+- a bootable or near-bootable minimal rootfs environment
+- base repo definitions
+
+### Outcome
+
+FLAX is no longer a slogan. It is a system structure.
 
 ---
 
-## 7.2 superpkg / xpkg
+## 10.2 Year 2 — FLAX SYSTEM I core build (2027)
 
-### Role
-Main package manager and system package contract.
+Target: boot, package manager, base system, install path.
 
-### Roadmap
+### Goals
 
-- core install/remove/update
-- repo metadata handling
-- package signing
-- rollback support
-- dependency solver refinement
-- third-party repo support
-- offline package bundles
-- enterprise policy support
+- rootfs is bootable
+- kernel and init system work
+- package manager installs base utilities
+- installer prototype works
+- repo and package database work
+- system-build is functional
+- basic networking and shell environment work
 
----
+### Deliverables
 
-## 7.3 ultrapkg
+- live ISO prototype
+- installer prototype
+- minimal package set
+- base unsigned but functioning package repo
+- first CI validation for system assembly
 
-### Role
-Next-generation package engine and package ecosystem foundation.
+### Expected state
 
-### Roadmap
+- a minimal but real system that can boot and install
 
-- faster metadata indexing
-- optimized repo operations
-- improved package graph solving
-- transactional upgrades
-- ephemeral system states
-- package provenance tracking
-- policy-aware installation
+### Outcome
+
+FLAX is an actual distro in early form.
 
 ---
 
-## 7.4 FlaxDefender
+## 10.3 Year 3 — FLAX SYSTEM I security + workflow (2028)
 
-### Role
-Central security and hardening subsystem.
+Target: make the system real for everyday users and security-sensitive workflows.
 
-### Roadmap
+### Goals
 
-- firewall and routing controls
-- system audit tooling
-- anti-malware and detection layer
-- metadata cleaning
-- privacy presets
-- event monitoring
-- secure state management
+- hardening by default
+- package signing and verification
+- firewall and service policy layer
+- FHS and filesystem clarity
+- user isolation and basic security defaults
+- FlaxDefender / FlaxBox / FlaxNet prototype integration
+- x86_64 stable desktop environment
 
----
+### Deliverables
 
-## 7.5 FlaxBox
+- full package signing pipeline
+- hardened install defaults
+- secure live mode and privacy mode
+- first desktop environment with basic productivity
+- release channels
 
-### Role
-Protected workspace and isolation layer.
+### Expected state
 
-### Roadmap
+- a usable secure desktop OS with package ecosystem and recovery model
 
-- encrypted containers
-- safe workspaces
-- user data isolation
-- VM-like app boundaries
-- ephemeral secure environments
-- import/export safe modes
+### Outcome
 
----
-
-## 7.6 FlaxNet
-
-### Role
-Routing, privacy, and network isolation layer.
-
-### Roadmap
-
-- Tor gateway support
-- VPN integration
-- DNS leak prevention
-- traffic routing rules
-- privacy modes
-- security policy for network separation
+FLAX becomes a real daily-use distro.
 
 ---
 
-## 7.7 xfce-trinity
+## 10.4 Year 4 — FLAX SYSTEM I universal release (2029)
 
-### Role
-The default desktop aesthetic and human-friendly system layer.
+Target: broad usability and ecosystem maturity.
 
-### Roadmap
+### Goals
 
-- Unix-style theming improvements
-- minimal but polished desktop
-- performance tuning
-- keyboard-first accessibility
-- modern but familiar experience
+- stable general-purpose desktop
+- full package repo and stable branches
+- live session and persistence modes
+- more hardware compatibility
+- OS update and rollback certainty
+- production tasks supported
+- desktop environment stabilized
+- enterprise profile support
 
----
+### Deliverables
 
-## 7.8 Fenyx browser
+- stable release candidate
+- package ecosystem maturity
+- release engineering documentation
+- security review of core packages
+- standard-x compatibility planning
 
-### Role
-Personal web browsing layer aligned with security and privacy values.
+### Expected state
 
-### Roadmap
+- a strong first-generation OS that is genuinely usable
 
-- privacy-focused defaults
-- minimal tracking footprint
-- isolation-friendly design
-- profile separation
-- security and anti-fingerprinting features
+### Outcome
 
----
-
-## 7.9 Flaxy Fenyx AI
-
-### Role
-AI interface and user productivity layer.
-
-### Roadmap
-
-- local-first or privacy-aware AI workflows
-- system assistance
-- command explanations
-- package recommendation
-- configuration help
-- user productivity and automation support
+FLAX SYSTEM I reaches maturity as a serious general-purpose and privacy-conscious distro.
 
 ---
 
-## 8. Universal system target
+## 10.5 Year 5 — FLAX SYSTEM II (UNIX) foundation (2030-2031)
 
-The final goal is not a niche distro; it is a universal system family.
+This is the turning point.
 
-A universal Unix-like system should support:
+The goal is not to keep patching FLAX SYSTEM I forever.
+The goal is to transition to the first full universal Unix-class system: FLAX SYSTEM II.
 
-- home users
-- developers
-- privacy users
-- security teams
-- research users
-- educational users
-- admins
-- advanced Linux users
-- users wanting a clean Unix-like experience without the complexity of legacy distributions
+### Objectives
 
-### The universal system should feel like:
+- complete standards-aligned base
+- finalize Unix compatibility philosophy
+- formalize Standard X as engineering level
+- build certification and conformance layer
+- stabilize package and repo model beyond trial state
+- improve portability across hardware and roles
+- set the architecture for “main Linux distro” ambition
 
-- simple enough for everyday computing
-- powerful enough for engineering work
-- secure enough for sensitive tasks
-- flexible enough for custom workflows
-- portable enough for varied hardware
-- consistent enough to trust over time
+### Components of FLAX SYSTEM II
 
----
+- strict compatibility model
+- improved package trust and integrity
+- hardened system registry and service policy
+- secure gateway and privacy layer as first-class operations
+- clean userspace and system layering
+- OS family ready for desktop, server, gateway, workstation, privacy, dev, and enterprise use
 
-## 9. Technical design goals
+### Outcome
 
-### Security
+The first full FLAX SYSTEM II (UNIX) architecture is born.
 
-- avoid insecure defaults
-- secure boot where possible
-- signed packages
-- minimal service exposure
-- managed permissions
-- encrypted user data
-
-### Portability
-
-- modular and repo-based architecture
-- clean filesystem hierarchy
-- standard command paths
-- portable package metadata
-- reusable system components
-
-### Efficiency
-
-- avoid unnecessary services
-- small default footprint
-- use efficient package design
-- optimize boot and update path
-- support older hardware where possible
-
-### Usability
-
-- stable desktop experience
-- good defaults
-- clean look and feel
-- minimal cognitive load
-- readable config
-
-### Flexibility
-
-- plain-text configuration
-- package selection control
-- composable security and network policies
-- persistent and live modes
-- changeable system state without bloat
+This is the point where FLAX stops being a strong Linux project and becomes a universal Unix-class system project.
 
 ---
 
-## 10. Timeline estimate
+## 11. The five-year target by repo
 
-This is a dream roadmap, so it is intentionally bold.
+### Core repos
 
-### Short term (0–12 months)
+- flax.system
+  - 2026: architecture and philosophy
+  - 2027: working base system
+  - 2028: hardened distro
+  - 2029: stable first release
+  - 2030-2031: FLAX SYSTEM II foundation
 
-- architecture specs finalized
-- base system booting
-- first package manager versions working
-- first live ISO
-- minimal installer
-- initial security hardening
+- system-builder
+  - 2026: build design
+  - 2027: functional assembly pipeline
+  - 2028: reproducible releases
+  - 2029: stable release pipeline
+  - 2030-2031: universal build system
 
-### Mid term (12–24 months)
+### Package repos
 
-- usable distro
-- base repo ecosystem
-- desktop environment
-- security layer working
-- package signing and rollback
-- installer stable
-- first release candidates
+- superpkg.xpkg
+  - 2026: package format and repo design
+  - 2027: dependency engine
+  - 2028: signed package flow
+  - 2029: release-ready package state
+  - 2030-2031: universal package contract
 
-### Long term (24–36 months)
+- ultrapkg
+  - 2026: metadata architecture
+  - 2027: transaction engine
+  - 2028: rollback and safety
+  - 2029: stable repo operation
+  - 2030-2031: package scale and trust layer
 
-- general-purpose stable release
-- broader app ecosystem
-- strong security defaults
-- advanced privacy flows
-- repeatable release process
-- enterprise readiness
+- ultrapkg-plus
+  - 2028-2029: performance and policy features
+  - 2030-2031: enterprise and advanced package layers
 
-### Vision term (3–5 years)
+### Security repos
 
-- mature universal system
-- broader hardware support
-- strong Unix and compatibility story
-- strong package ecosystem
-- certification pathway and standards alignment
-- known, trusted, durable platform
+- flaxdefender
+  - 2027: design and policy
+  - 2028: prototype controls
+  - 2029: hardened default mode
+  - 2030-2031: mature core security stack
 
----
+- flaxbox
+  - 2027: isolated workspace draft
+  - 2028: secure environment prototype
+  - 2029: encrypted workspaces
+  - 2030-2031: first-class safe work environment
 
-## 11. Project milestones
+- flaxnet
+  - 2027: gateway and privacy model
+  - 2028: Tor/VPN routing stage
+  - 2029: privacy-safe networking defaults
+  - 2030-2031: mature network isolation platform
 
-### M0 — System definition
-- architecture and philosophy set
-- scope frozen
+### Desktop repos
 
-### M1 — Minimal bootable system
-- live rootfs works
-- package manager works
+- xfce-trinity
+  - 2027: initial style and UX
+  - 2028: polished workflow
+  - 2029: daily-use desktop
+  - 2030-2031: universal workstation layer
 
-### M2 — Installable environment
-- installer works
-- base system boots after install
+- fenyx
+  - 2027-2028: secure browser prototype
+  - 2029: daily-use browser layer
+  - 2030-2031: privacy-respecting browser platform
 
-### M3 — Secure default system
-- firewall, hardening, encryption, minimal services
+- flaxy.fenyx.ai
+  - 2028-2029: early assistant layer
+  - 2030-2031: system-aware AI helper
 
-### M4 — Daily-use desktop
-- productivity apps and GUI ecosystem
+### Compatibility repos
 
-### M5 — Security and privacy stack
-- FlaxDefender, FlaxBox, FlaxNet working together
+- standart-x
+  - 2026-2028: concept and design
+  - 2029: standards alignment tests
+  - 2030-2031: real compatibility story
 
-### M6 — Release-ready distro
-- all major flows tested
+- flaxwine
+  - 2028-2029: compatibility utilization
+  - 2030-2031: broader runtime support
 
-### M7 — Universal system vision
-- multi-role system across desktop/server/privacy/security
-
-### M8 — Certification path
-- documented conformance and compatibility strategy
-
----
-
-## 12. Final dream statement
-
-FLAX SYSTEM should become the system that makes Unix feel alive again:
-
-- human-readable
-- secure by default
-- flexible without confusion
-- modular without chaos
-- portable without abstraction bloat
-- complete without being bloated
-- modern without abandoning the principles that made Unix powerful
-
-This is the path to a real universal system.
-
-Not just another distro.
-Not just another package manager.
-Not just a themed desktop.
-
-A cohesive system.
-A portable system.
-A secure system.
-A flexible system.
-A system that can be understood.
-A system that can be trusted.
-A system that can become a real Unix era successor.
+- flaxdroid
+  - 2029-2031: mobile/embedded adaptation layer
 
 ---
 
-## 13. Closing vision
+## 12. Release strategy
 
-The long-term dream is:
+### 12.1 Build channels
 
-- FLAX OS as the flagship system
-- superpkg and ultrapkg as the package foundation
-- FlaxDefender, FlaxBox, and FlaxNet as the security ecosystem
-- xfce-trinity, Fenyx, and Flaxy AI as the user experience layer
-- a clean, certifiable, standards-aware Unix-like platform for the next generation
+- nightly
+- testing
+- beta
+- rc
+- stable
+- lts
 
-This is not a quick project. It is a system civilization project.
+Each release channel should carry:
 
-But if done correctly, it can become one of the most coherent, powerful, and universal free operating systems ever built.
+- signed repo metadata
+- package checksums
+- rollback set
+- known issues file
+- architecture matrix
+- hardware compatibility notes
+
+### 12.2 Release philosophy
+
+- do not ship unstable base packages to the public channel
+- do not hide critical package conflicts
+- do not release with weak recovery flow
+- do not treat security as optional
+- do not confuse “live-session works” with “distro works”
 
 ---
 
-## 14. Recommended next steps
+## 13. What wins in the end
 
-1. Lock the architecture document.
-2. Define the package metadata and repo format.
-3. Build the minimal rootfs.
-4. Get a bootable kernel and init environment.
-5. Make superpkg functional on that base.
-6. Add reproducible builds and signed package verification.
-7. Create the first installable live ISO.
-8. Add hardening and security defaults.
-9. Create the desktop layer.
-10. Grow the repo ecosystem.
-11. Build certification and conformance documentation.
-12. Make the system a real universal Unix platform.
+This project wins if it becomes:
 
-This is the roadmap.
-This is the dream.
+- understandable
+- stable
+- secure
+- modular
+- portable
+- standards-aware
+- useful for real humans
+
+That is the only path to being more than a slogan or a theme.
+
+---
+
+## 14. Why the world needs this
+
+The current IT ecosystem is dominated by complexity, hidden state, and brittle package logic. People want systems that are:
+
+- clear enough to reason about
+- stable enough to trust
+- secure enough to live with
+- flexible enough to customize without breaking things
+
+FLAX is the answer to that need.
+
+It is not a patch. It is an architecture.
+
+---
+
+## 15. Final vow
+
+FLAX will not merely be a Linux distribution.
+FLAX will become a system family.
+
+A family that can do:
+
+- workstation computing
+- secure privacy work
+- software development
+- server roles
+- infrastructure tasks
+- research and security workflows
+- everyday human computing
+
+and eventually become a standards-conscious, portable, modern, Unix-class system that can claim real maturity.
+
+```cpp
+int main() {
+  flax::system::Legend temple;
+  temple.build();
+  temple.harden();
+  temple.port();
+  temple.unify();
+  temple.become_unix();
+  return 0;
+}
+```
+
+---
+
+## 16. The final mission statement
+
+FLAX SYSTEM I is the foundation.
+FLAX SYSTEM II (UNIX) is the destiny.
+
+From a symbolic concept to a real system.
+From a dream to a standard.
+From a distro to a universal system family.
+
 This is the path.
+This is the roadmap.
+This is the temple.
 
 ---
 
-## 15. One sentence summary
+## 17. Proposed timeline summary
 
-FLAX SYSTEM is the plan to build a secure, modular, portable, Unix-like universal operating system centered around superpkg / ultrapkg, hardened by FlaxDefender, isolated through FlaxBox, network-aware via FlaxNet, and designed to evolve into a standards-conscious, trusted system of the future.
+- 2026: foundation and system definition
+- 2027: minimal bootable base and package manager
+- 2028: hardened security and live environment
+- 2029: stable first generation and universal desktop
+- 2030-2031: FLAX SYSTEM II (UNIX) architecture and conformance foundation
 
+Estimated total first full cycle: 5 years.
+Estimated total to a truly mature Unix-grade universal ecosystem: 5–8 years.
 
+---
 
+## 18. The five-person + 30-AI acceleration view
 
+With a serious team of 5 humans and 30 AI collaborators:
 
+- architecture design: fast
+- repo generation: fast
+- docs and specs: fast
+- package and system tooling: fast
+- validation and release quality: still requires real humans
+- standards and certification: slow, deliberate, and real
 
+This means the first full cycle is possible in 5 years if the team remains disciplined and refuses to build chaos.
 
+---
 
+## 19. Closing
 
+If FLAX does this correctly, it will not be remembered as just another Linux project.
+It will be remembered as the system that rebuilt the Unix temple for the modern age.
 
+The temple is not finished.
+But the plan is real.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"}
+And the first full cycle is now clearly drawn.
