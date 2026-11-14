@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#080610">
-  <meta name="description" content="FLAX SYSTEM — a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing.">
-  <meta property="og:title" content="FLAX SYSTEM — Flaxware">
-  <meta property="og:description" content="Explore FLAX SYSTEM's ideals, architecture, download information, and manuals.">
+  <meta name="description" content="FLAX SYSTEM - a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing.">
+  <meta property="og:title" content="FLAX SYSTEM - Flaxware">
+  <meta property="og:description" content="Install and explore FLAX SYSTEM's ideals, architecture, and manuals.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flaxware.github.io/flax.system/">
   <link rel="icon" href="https://flaxware.github.io/assets/favicon.ico" sizes="any">
@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>FLAX SYSTEM — Flaxware</title>
+  <title>FLAX SYSTEM - Flaxware</title>
   <style>
     :root{color-scheme:dark;--bg:#080610;--panel:rgba(19,12,35,.78);--panel2:rgba(43,19,74,.56);--text:#fbf8ff;--muted:#ccbde0;--quiet:#a28db9;--line:rgba(178,106,255,.34);--green:#39ff14;--green-ink:#071504;--green2:#9aff83;--purple:#c84dff;--focus:#ffd166;--content:1160px;--mono:"DM Mono",ui-monospace,"SFMono-Regular",Consolas,monospace}
     *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px;-webkit-text-size-adjust:100%}body{margin:0;min-width:320px;overflow-x:hidden;color:var(--text);background:radial-gradient(ellipse at 50% 30%,rgba(91,40,135,.23),transparent 35rem),radial-gradient(ellipse at 50% 45%,rgba(57,255,20,.045),transparent 28rem),var(--bg);font:16px/1.6 "Space Grotesk",Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}button{font:inherit}::selection{color:var(--green-ink);background:var(--green)}:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.container{width:min(var(--content),calc(100% - 48px));margin-inline:auto}.skip-link{position:fixed;z-index:100;top:10px;left:10px;padding:10px 14px;transform:translateY(-160%);border-radius:8px;background:var(--green);color:var(--green-ink)}.skip-link:focus{transform:translateY(0)}
@@ -32,19 +32,19 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
     <a class="brand" href="https://flaxware.github.io/" aria-label="Flaxware home"><img src="https://flaxware.github.io/assets/logo.svg" alt=""><span class="brand-name">flaxware<span>.</span></span></a>
-    <div class="nav-links"><a href="#about">About</a><a href="#architecture">Architecture</a><a href="#downloads">Downloads</a><a class="nav-github" href="https://github.com/flaxware/flax.system">GitHub ↗</a></div>
+    <div class="nav-links"><a href="#download">Download</a><a href="#manuals">Manuals</a><a href="#architecture">Architecture</a><a class="nav-github" href="https://github.com/flaxware/flax.system">GitHub ↗</a></div>
   </nav></header>
   <main id="main">
     <section class="hero" id="home"><div class="container hero-content">
-      <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FLAXWARE · SYSTEM PROJECT</p>
+      <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FLAXWARE · FLAX SYSTEM</p>
       <h1>A system for secure, <span>everyday computing.</span></h1>
-      <p class="hero-sub">FLAX SYSTEM is a Linux-based, Unix-like operating system project exploring security, privacy, flexibility, and general-purpose usability. Its goal is to make thoughtful security concepts approachable without losing sight of daily computing.</p>
-      <div class="hero-actions"><a class="button primary" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Download FLAX SYSTEM ↗</a><a class="button secondary" href="#architecture">Architecture</a><a class="button" href="#manuals">Manuals</a></div>
+      <p class="hero-sub">FlaxOS is a Unix-like operating system project exploring security, privacy, flexibility, and general-purpose usability. Its goal is to make thoughtful security concepts approachable without losing sight of daily computing.</p>
+      <div class="hero-actions"><a class="button primary" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Download ↗</a><a class="button secondary" href="#architecture">Architecture</a><a class="button" href="#manuals">Manuals</a></div>
       <p class="hero-note">Check official download instructions for current builds and availability before installing.</p>
     </div></section>
     <section class="signal-strip" aria-label="Project principles"><div class="signal-inner container">
       <div class="signal"><span class="signal-icon" aria-hidden="true">✦</span><div><strong>Security-minded</strong><small>Layered protections and clear security goals</small></div></div>
-      <div class="signal"><span class="signal-icon" aria-hidden="true">⌘</span><div><strong>Flexible by design</strong><small>Modular components and hierarchical organization</small></div></div>
+      <div class="signal"><span class="signal-icon" aria-hidden="true">⌘</span><div><strong>Structured</strong><small>Modular components and hierarchical organization</small></div></div>
       <div class="signal"><span class="signal-icon" aria-hidden="true">◈</span><div><strong>For everyday use</strong><small>Privacy goals alongside general-purpose computing</small></div></div>
     </div></section>
     <section class="section" id="about"><div class="container">
@@ -58,20 +58,23 @@
     <section class="section" id="architecture"><div class="container">
       <div class="section-head"><p class="section-kicker">// System architecture</p><h2 class="section-title">A layered approach to <span>security and usability.</span></h2><p class="section-lead">These are project components and design directions described in the repository documentation. Their availability and maturity can vary; consult the source repository for implementation status.</p></div>
       <div class="project-grid">
-        <article class="project-card"><p class="project-number">Security center</p><h3>FlaxDefender</h3><p>Planned controls for firewall management, system monitoring, metadata cleanup, and privacy settings.</p></article>
-        <article class="project-card"><p class="project-number">Isolation</p><h3>FlaxBox</h3><p>An envisioned encrypted workspace and isolation layer for containers, virtual machines, and protected user data.</p></article>
-        <article class="project-card"><p class="project-number">Networking</p><h3>FlaxNet</h3><p>Network privacy and gateway concepts including optional Tor or VPN routing, traffic separation, and DNS leak prevention.</p></article>
-        <article class="project-card"><p class="project-number">Packages</p><h3>Package ecosystem</h3><p>Documentation references superpkg/xpkg and ultrapkg alongside familiar Linux package formats and repository workflows.</p></article>
-        <article class="project-card"><p class="project-number">Desktop</p><h3>Daily-use environment</h3><p>The project aims for a practical desktop experience with familiar workflows and productivity software.</p></article>
-        <article class="project-card"><p class="project-number">Compatibility</p><h3>Unix-inspired design</h3><p>Plain-text configuration, hierarchical organization, explicit permissions, composable tools, and standards-aware behavior are design goals.</p></article>
+        <article class="project-card"><p class="project-number">Security center</p><h3>FlaxDefender</h3><p>Anti-virus, cleaner, system monitoring, and security awareness.</p></article>
+        <article class="project-card"><p class="project-number">Isolation</p><h3>FlaxBox</h3><p>Knox-like and Qubes OS inspired encrypted workspaces and isolation layer for containers, virtual machines, and protected user data.</p></article>
+        <article class="project-card"><p class="project-number">Networking</p><h3>FlaxNet</h3><p>Network layer, firewall management, gateway concepts including optional TOR or VPN routing, traffic separation, DNS encryption and leak prevention.</p></article>
+        <article class="project-card"><p class="project-number">Browser</p><h3>Fenyx</h3><p>Firefox-based browser with TOR, VPN, ad-blocking and strict privacy focused settings.</p></article>
+        <article class="project-card"><p class="project-number">Desktop</p><h3>Nitro</h3><p>XFCE-based desktop environment with focus on being user friendly and security-first.</p></article>
+        <article class="project-card"><p class="project-number">Blueprint</p><h3>Unix-inspired design</h3><p>Plain-text configuration, hierarchical organization, explicit permissions, priveledge separation, and OpenBSD kernel behaviour.</p></article>
       </div>
     </div></section>
     <section class="section" id="features"><div class="container">
       <div class="section-head"><p class="section-kicker">// Project ideals</p><h2 class="section-title">Designed around <span>clear principles.</span></h2></div>
       <ul class="feature-list">
-        <li><strong>General</strong>Everyday computing alongside specialist workflows.</li><li><strong>Efficient</strong>Purposeful software and attention to system overhead.</li>
-        <li><strong>Perfect</strong>A project ideal: useful defaults and a considered setup.</li><li><strong>Flexible</strong>Plain-text configuration and modular workflows.</li>
-        <li><strong>Portable</strong>Reusable components organized in a clear hierarchy.</li><li><strong>Safe</strong>Security goals and controls should be understandable, not hidden.</li>
+        <li><strong>General</strong>Designed for every purpose with everyday computing in mind.</li>
+        <li><strong>Efficient</strong>Keep the system lightweight and stable, old hardware becomes modern new.</li>
+        <li><strong>Perfect</strong>Fully configured out of the box, no need to mess around.</li>
+        <li><strong>Flexible</strong>Plain text is sacred, structure is natural.</li>
+        <li><strong>Portable</strong>Modular components like bricks building hierarchy, organize components so they can be maintained and reused.</li>
+        <li><strong>Safe</strong>Security is built in, not optional.</li>  
       </ul>
     </div></section>
     <section class="section" id="status"><div class="container">
