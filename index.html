@@ -1,293 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#080610" />
-    <meta name="description" content="FLAX SYSTEM - a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing." />
-    <meta property="og:title" content="FLAX SYSTEM - Flaxware" />
-    <meta property="og:description" content="Install and explore FLAX SYSTEM's ideals, architecture, and manuals." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flaxware.github.io/flax.system/" />
-    <link rel="icon" href="https://flaxware.github.io/assets/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="https://flaxware.github.io/assets/logo.png" />
-    <link rel="icon" type="image/svg+xml" href="https://flaxware.github.io/assets/logo.svg" />
-    <link rel="canonical" href="https://flaxware.github.io/flax.system/" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <title>FLAX SYSTEM - Flaxware</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="navbar container" aria-label="Main navigation">
-        <a class="logo" href="#home" aria-label="FLAX SYSTEM home">
-          <img src="https://flaxware.github.io/assets/logo.svg" alt="" />
-          <span>flaxware<span>.</span></span>
-        </a>
-
-        <div class="nav-links">
-          <a href="#download">Download</a>
-          <a href="#manuals">Manuals</a>
-          <a href="#architecture">Architecture</a>
-          <a class="nav-button" href="https://github.com/flaxware/flax.system" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="home">
-        <div class="container hero-content">
-          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FLAXWARE · FLAX SYSTEM</p>
-          <h1>A system for secure, <span>everyday computing.</span></h1>
-          <p class="hero-text">
-            FlaxOS is a Unix-like operating system project exploring security, privacy,
-            flexibility, and general-purpose usability. Its goal is to make thoughtful
-            security concepts accessible for everyday computing.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#download">Download</a>
-            <a class="button button-secondary" href="#architecture">Architecture</a>
-          </div>
-          <p class="hero-note">Check official download instructions for current builds and availability before installing.</p>
-        </div>
-      </section>
-
-      <section class="signal-strip" aria-label="Project principles">
-        <div class="signal-inner container">
-          <div class="signal">
-            <span class="signal-icon" aria-hidden="true">✦</span>
-            <div>
-              <strong>Security-minded</strong>
-              <small>Layered protections and clear security goals</small>
-            </div>
-          </div>
-          <div class="signal">
-            <span class="signal-icon" aria-hidden="true">⌘</span>
-            <div>
-              <strong>Structured</strong>
-              <small>Modular components and hierarchical organization</small>
-            </div>
-          </div>
-          <div class="signal">
-            <span class="signal-icon" aria-hidden="true">◈</span>
-            <div>
-              <strong>For everyday use</strong>
-              <small>Privacy goals alongside general-purpose computing</small>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// The project</p>
-              <h2>More than a theme. <span>A system in progress.</span></h2>
-            </div>
-            <p class="section-description">
-              The project explores a modern operating system concept built around privacy,
-              usability, and explicit security choices.
-            </p>
-          </div>
-
-          <div class="about-grid">
-            <div class="about-copy">
-              <p>
-                FLAX SYSTEM is a security-first operating system concept focused on privacy,
-                flexibility, and everyday computing. It combines a Unix-inspired design with
-                a practical approach to system structure, isolation, and user control.
-              </p>
-              <p>
-                The goal is not only to make a technically secure system, but to make secure
-                defaults understandable, reasonable, and usable for daily work.
-              </p>
-            </div>
-
-            <div class="project-grid">
-              <article class="project-card featured">
-                <div class="project-icon" aria-hidden="true">⌕</div>
-                <p class="project-number">01 / General</p>
-                <h3>Everyday computing</h3>
-                <p>Aims to support common computing needs with a practical and approachable experience.</p>
-              </article>
-              <article class="project-card">
-                <div class="project-icon" aria-hidden="true">◈</div>
-                <p class="project-number">02 / Privacy</p>
-                <h3>Control and isolation</h3>
-                <p>Explores compartmentalization, clear security boundaries, and stronger user control.</p>
-              </article>
-              <article class="project-card">
-                <div class="project-icon" aria-hidden="true">⌘</div>
-                <p class="project-number">03 / Choice</p>
-                <h3>Flexible workflows</h3>
-                <p>Project documentation describes modular components, plain-text configuration, and adaptable workflows.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="architecture">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// System architecture</p>
-              <h2>A layered approach to <span>security and usability.</span></h2>
-            </div>
-            <p class="section-description">
-              FLAX SYSTEM explores a modular, Unix-inspired design with layered protection and clear responsibilities.
-            </p>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card">
-              <p class="project-number">Security center</p>
-              <h3>FlaxDefender</h3>
-              <p>Anti-virus, cleaner, system monitoring, and security awareness.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-number">Isolation</p>
-              <h3>FlaxBox</h3>
-              <p>Knox-like and Qubes OS inspired encrypted workspaces and isolation layer for containers, virtual machines, and applications.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-number">Networking</p>
-              <h3>FlaxNet</h3>
-              <p>Network layer, firewall management, gateway concepts including optional TOR or VPN routing, traffic filtering and control.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-number">Browser</p>
-              <h3>Fenyx</h3>
-              <p>Firefox-based browser with TOR, VPN, ad-blocking and strict privacy focused settings.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-number">Desktop</p>
-              <h3>Nitro</h3>
-              <p>XFCE-based desktop environment with focus on being user friendly and security-first.</p>
-            </article>
-            <article class="project-card">
-              <p class="project-number">Blueprint</p>
-              <h3>Unix-inspired design</h3>
-              <p>Plain-text configuration, hierarchical organization, explicit permissions, privilege separation, and modular components.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="features">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// Project ideals</p>
-              <h2>Designed around <span>clear principles.</span></h2>
-            </div>
-          </div>
-          <ul class="feature-list">
-            <li><strong>General</strong>Designed for every purpose with everyday computing in mind.</li>
-            <li><strong>Efficient</strong>Keep the system lightweight and stable, old hardware becomes modern new.</li>
-            <li><strong>Perfect</strong>Fully configured out of the box, no need to mess around.</li>
-            <li><strong>Flexible</strong>Plain text is sacred, structure is natural.</li>
-            <li><strong>Portable</strong>Modular components like bricks building hierarchy, organize components so they can be maintained and reused.</li>
-            <li><strong>Safe</strong>Security is built in, not optional.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" id="status">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// Development</p>
-              <h2>An evolving <span>project.</span></h2>
-            </div>
-            <p class="section-description">FLAX SYSTEM is under development. Follow the roadmap for goals and progress.</p>
-          </div>
-
-          <div class="roadmap" aria-label="Roadmap summary">
-            <div class="phase"><strong>2026 · Foundation</strong><span>Architecture, project structure, and initial system design.</span></div>
-            <div class="phase"><strong>Development</strong><span>Build and refine the system's core components.</span></div>
-            <div class="phase"><strong>Future</strong><span>Continue toward a useful, security-minded operating system.</span></div>
-          </div>
-
-          <p class="hero-note">Timeline items are roadmap goals, not release promises. See the <a href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">official roadmap ↗</a>.</p>
-        </div>
-      </section>
-
-      <section class="section" id="download">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// Get FLAX SYSTEM</p>
-              <h2>Downloads and <span>release information.</span></h2>
-            </div>
-            <p class="section-description">Use the official download instructions for current builds, availability, and installation information.</p>
-          </div>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Open official downloads ↗</a>
-            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/releases">View releases ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="verify">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// Verify before installing</p>
-              <h2>Trust the artifact, <span>not just the link.</span></h2>
-            </div>
-          </div>
-          <div class="verify-panel">
-            <h3>Use verification data published for that exact build</h3>
-            <p>Before installing an image, check the official download page for a checksum or cryptographic signature. Verify it using trusted tools and instructions for your platform.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="manuals">
-        <div class="container">
-          <div class="section-heading">
-            <div>
-              <p class="section-kicker">// Manuals and project docs</p>
-              <h2>Read the docs. <span>Follow the work.</span></h2>
-            </div>
-            <p class="section-description">Browse the project documentation, installation notes, and development plans.</p>
-          </div>
-
-          <div class="manual-links">
-            <a class="button button-primary" href="https://github.com/flaxware/flax.system/blob/main/README.md">System manual ↗</a>
-            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/blob/main/README-IDOL.md">Project ideals ↗</a>
-            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">Roadmap ↗</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="manifesto" id="contact">
-        <div class="container manifesto-box">
-          <div>
-            <p class="section-kicker">// FLAXWARE · FLAX SYSTEM</p>
-            <h2>Built with curiosity. <span>Designed with intent.</span></h2>
-          </div>
-          <div class="manifesto-copy">
-            <p>Explore the project, read the documentation, and follow development on GitHub.</p>
-            <div class="hero-actions"><a class="button button-primary" href="https://github.com/flaxware/flax.system">Visit GitHub ↗</a></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© 2026 Flaxware · FLAX SYSTEM</span>
-        <div class="footer-links">
-          <a href="https://github.com/flaxware/flax.system">GitHub</a>
-          <a href="https://flaxware.github.io/">Flaxware</a>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080610">
+  <meta name="description" content="FLAX SYSTEM - a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing.">
+  <meta property="og:title" content="FLAX SYSTEM - Flaxware">
+  <meta property="og:description" content="Install FLAX SYSTEM; All in one software in a form of system.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flaxware.github.io/flax.system/">
+  <link rel="icon" href="https://flaxware.github.io/assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="https://flaxware.github.io/assets/logo.png">
+  <link rel="icon" type="image/svg+xml" href="https://flaxware.github.io/assets/logo.svg">
+  <link rel="canonical" href="https://flaxware.github.io/flax.system/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>FLAX SYSTEM - Flaxware</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080610;--panel:rgba(19,12,35,.78);--panel2:rgba(43,19,74,.56);--text:#fbf8ff;--muted:#ccbde0;--quiet:#a28db9;--line:rgba(178,106,255,.34);--green:#39ff14;--green2:#00e640;--green-ink:#041306;--purple:#a33dff;--purple2:#d18aff;--content:1160px;--mono:ui-monospace,"SFMono-Regular",Consolas,monospace}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px;-webkit-text-size-adjust:100%}body{margin:0;min-width:320px;overflow-x:hidden;color:var(--text);font:16px/1.6 ui-monospace,"SFMono-Regular",Consolas,monospace;background:radial-gradient(ellipse at 82% 4%,rgba(163,61,255,.26),transparent 34rem),radial-gradient(ellipse at 12% 50%,rgba(57,255,20,.075),transparent 32rem),linear-gradient(180deg,#080610,#0b0615 55%,#080610)}body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(170,110,255,.08) 4px,transparent 5px)}a{color:inherit}button,input,select{font:inherit}a,button,select{-webkit-tap-highlight-color:transparent}:focus-visible{outline:2px solid var(--green);outline-offset:4px}::selection{background:var(--green);color:var(--green-ink)}.container{width:min(var(--content),calc(100% - 48px));margin-inline:auto}.skip-link{position:fixed;z-index:100;top:10px;left:10px;padding:10px 14px;transform:translateY(-160%);border:1px solid var(--green);border-radius:8px;background:#100b1b;color:var(--green)}.skip-link:focus{transform:translateY(0)}
+    .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:rgba(8,6,16,.88);backdrop-filter:blur(20px) saturate(170%);box-shadow:0 6px 32px rgba(0,0,0,.4),0 0 28px rgba(163,61,255,.14)}.navbar{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;text-decoration:none;font-weight:900;letter-spacing:-.06em;font-size:1.28rem}.brand img{width:30px;height:30px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(163,61,255,.7))}.brand-name{text-shadow:0 0 14px rgba(255,255,255,.3),0 0 24px rgba(163,61,255,.65)}.brand-name span{color:var(--green);text-shadow:0 0 12px var(--green)}.nav-tools{min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:12px}.nav-links{display:flex;gap:15px}.nav-links a,.footer-links a{color:var(--muted);font: .78rem var(--mono);text-decoration:none;white-space:nowrap}.nav-links a:hover,.footer-links a:hover{color:var(--green);text-shadow:0 0 12px var(--green)}.nav-search{min-width:0;display:flex;gap:4px;padding:4px;border:1px solid rgba(57,255,20,.48);border-radius:8px;background:rgba(80,34,120,.28);box-shadow:0 0 18px rgba(163,61,255,.28),inset 0 0 18px rgba(163,61,255,.15);backdrop-filter:blur(16px)}.nav-search input{width:clamp(110px,14vw,200px);min-width:0;padding:7px;border:0;outline:0;background:transparent;color:var(--text);font-size:.82rem}.nav-search input::placeholder{color:var(--quiet)}.nav-search select{width:103px;padding:0 3px;border:0;background:transparent;color:var(--purple2);font-size:.72rem}.nav-search select option{background:#160c25}.nav-search button,.login-button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:6px 11px;border:1px solid rgba(57,255,20,.72);border-radius:7px;background:var(--green2);color:var(--green-ink);font-weight:900;text-decoration:none;white-space:nowrap;cursor:pointer;box-shadow:0 0 12px rgba(57,255,20,.4),0 0 24px rgba(163,61,255,.25);transition:transform .18s,filter .18s,box-shadow .18s}.nav-search button:hover,.login-button:hover,.button:hover,.tool-button:hover{transform:translateY(-2px);filter:brightness(1.13);box-shadow:0 0 20px rgba(57,255,20,.5),0 0 34px rgba(163,61,255,.45)}
+    .hero{position:relative;overflow:hidden;padding:clamp(54px,8vw,100px) 0 50px}.hero::after{content:"";position:absolute;z-index:-1;width:380px;height:380px;right:-110px;top:8%;border:1px solid rgba(57,255,20,.2);border-radius:50%;box-shadow:0 0 0 34px rgba(163,61,255,.08),0 0 0 76px rgba(57,255,20,.035),0 0 90px rgba(163,61,255,.32);pointer-events:none}.hero-content{max-width:var(--content)}.eyebrow,.section-kicker{color:var(--green);font:600 .72rem/1.4 var(--mono);letter-spacing:.13em;text-transform:uppercase}.eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 16px}.live-dot{width:8px;height:8px;flex:0 0 auto;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green),0 0 30px rgba(57,255,20,.7)}h1{max-width:900px;margin:0;font:900 clamp(2.8rem,8vw,6.6rem)/.94 ui-monospace,"SFMono-Regular",Consolas,monospace;letter-spacing:-.085em;text-transform:uppercase}h1 .accent,.section-title span,.manifesto-box h2 span{color:var(--purple2);text-shadow:0 0 10px rgba(209,138,255,.6),0 0 34px rgba(163,61,255,.65)}.hero-copy{max-width:700px;margin:20px 0 22px;color:var(--muted);font-size:clamp(.95rem,1.8vw,1.08rem)}.hero-actions{display:flex;flex-wrap:wrap;gap:9px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:8px 14px;border:1px solid rgba(163,61,255,.62);border-radius:7px;background:rgba(163,61,255,.15);color:var(--text);font:700 .82rem var(--mono);text-decoration:none;box-shadow:0 0 14px rgba(163,61,255,.2);transition:transform .18s,box-shadow .18s}.button-primary{border-color:rgba(57,255,20,.7);background:var(--green);color:var(--green-ink);box-shadow:0 0 14px rgba(57,255,20,.3),0 0 26px rgba(163,61,255,.16)}
+    .signal-strip{border-block:1px solid var(--line);background:rgba(26,12,44,.44);backdrop-filter:blur(10px)}.signal-inner{display:grid;grid-template-columns:repeat(3,1fr)}.signal{display:flex;align-items:center;gap:11px;min-height:68px;padding:10px 16px;border-right:1px solid var(--line)}.signal:first-child{padding-left:0}.signal:last-child{border:0}.signal-icon{width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border:1px solid rgba(57,255,20,.45);border-radius:7px;color:var(--green);background:rgba(57,255,20,.08);box-shadow:0 0 14px rgba(57,255,20,.1)}.signal-icon svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.signal strong{display:block;font-size:.82rem}.signal small{display:block;color:var(--quiet);font-size:.7rem}
+    .section{padding:62px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:20px}.section-kicker{margin:0 0 7px;font-size:.68rem}.section-title{margin:0;font-size:clamp(1.75rem,4vw,2.8rem);line-height:1.05;letter-spacing:-.06em;text-transform:uppercase}.section-intro{max-width:540px;margin:0;color:var(--muted);font-size:.85rem}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.project-card{min-width:0;min-height:245px;display:flex;flex-direction:column;align-items:flex-start;padding:21px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(140deg,rgba(84,39,130,.4),rgba(17,9,30,.8));backdrop-filter:blur(18px);box-shadow:inset 0 1px rgba(255,255,255,.08),0 0 24px rgba(163,61,255,.14);transition:transform .18s,border-color .18s,box-shadow .18s}.project-card:hover{transform:translateY(-3px);border-color:var(--purple2);box-shadow:0 0 28px rgba(163,61,255,.38)}.project-card.featured{border-color:rgba(57,255,20,.55)}.project-icon{width:39px;height:39px;display:grid;place-items:center;margin-bottom:17px;border-radius:8px;color:var(--green);background:rgba(57,255,20,.1);font-size:1.15rem}.project-number{margin:0 0 7px;color:var(--purple2);font:.66rem var(--mono);letter-spacing:.1em}.project-card h3{margin:0 0 7px;font-size:1.12rem;text-transform:uppercase}.project-card p:not(.project-number){margin:0;color:var(--muted);font-size:.82rem}.project-card>a{display:inline-flex;gap:8px;margin-top:auto;padding-top:16px;color:var(--green);text-decoration:none;font-weight:800;font-size:.78rem}.system-actions{width:100%;display:flex;flex-direction:column;align-items:stretch;gap:7px;margin-top:auto;padding-top:16px}
+    .privacy-section{padding-top:12px}.privacy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tool-card{min-width:0;padding:22px;border:1px solid rgba(178,106,255,.48);border-radius:10px;background:linear-gradient(145deg,rgba(70,31,111,.48),rgba(16,8,29,.82));backdrop-filter:blur(20px) saturate(155%);box-shadow:inset 0 1px rgba(255,255,255,.08),0 0 26px rgba(163,61,255,.18)}.tool-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:15px}.tool-card h3{margin:0 0 6px;font-size:1.05rem;text-transform:uppercase}.tool-card p{margin:0;color:var(--muted);font-size:.82rem}.tool-tag{flex:0 0 auto;padding:4px 8px;border:1px solid rgba(163,61,255,.75);border-radius:5px;color:var(--purple2);background:rgba(163,61,255,.2);font:.62rem var(--mono);text-transform:uppercase}.terminal-output{display:flex;align-items:center;gap:10px;min-height:57px;margin:15px 0 12px;padding:10px 12px;border:1px solid rgba(163,61,255,.48);border-radius:7px;background:rgba(7,4,13,.78);box-shadow:inset 0 0 18px rgba(163,61,255,.12)}.result-light{width:8px;height:8px;flex:0 0 auto;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.terminal-output strong{display:block;font:600 .8rem var(--mono)}.terminal-output small{color:var(--muted);font-size:.72rem}.tool-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.tool-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:40px;padding:8px 12px;border:1px solid rgba(57,255,20,.62);border-radius:7px;background:rgba(0,230,64,.9);color:#041307;font-weight:900;font-size:.75rem;text-decoration:none;cursor:pointer;box-shadow:0 0 14px rgba(57,255,20,.2),0 0 22px rgba(163,61,255,.2);transition:transform .18s,box-shadow .18s}.lookup-form{display:flex;gap:8px;margin:16px 0 0}.lookup-form input{flex:1;min-width:0;min-height:42px;padding:8px 10px;border:1px solid var(--line);border-radius:7px;background:rgba(7,4,13,.8);color:var(--text)}.privacy-note{margin-top:12px!important;color:var(--quiet)!important;font-size:.7rem!important}.local-list{display:grid;margin:12px 0 15px;border-top:1px solid var(--line)}.local-row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:.76rem}.local-row span:first-child{color:var(--muted)}.local-row output{max-width:60%;overflow-wrap:anywhere;color:var(--green);font-family:var(--mono);font-size:.7rem;text-align:right}.map-primary{border-color:rgba(209,138,255,.85);box-shadow:inset 0 0 34px rgba(163,61,255,.17),0 0 36px rgba(163,61,255,.32)}.eye-button{width:100%;min-height:100px;display:flex;align-items:center;justify-content:center;gap:13px;margin:14px 0 10px;padding:12px;border:1px solid rgba(209,138,255,.78);border-radius:9px;background:radial-gradient(circle at center,rgba(163,61,255,.32),rgba(7,4,13,.84) 72%);color:var(--text);font:600 .76rem var(--mono);cursor:pointer;box-shadow:inset 0 0 22px rgba(163,61,255,.16),0 0 24px rgba(163,61,255,.22)}.eye-icon{width:42px;height:42px;flex:0 0 auto;color:var(--purple2);filter:drop-shadow(0 0 10px rgba(163,61,255,.95))}.map-frame{display:block;width:100%;height:430px;margin-top:14px;border:1px solid var(--line);border-radius:8px;background:#080610}.map-frame[hidden]{display:none}
+    .manifesto{padding:0 0 64px}.manifesto-box{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center;padding:clamp(22px,5vw,42px);border:1px solid var(--line);border-radius:10px;background:linear-gradient(120deg,rgba(163,61,255,.25),rgba(0,230,64,.045));backdrop-filter:blur(20px);box-shadow:0 0 34px rgba(163,61,255,.17)}.manifesto-box h2{margin:0;font-size:clamp(1.7rem,3.5vw,2.6rem);line-height:1.08;text-transform:uppercase}.manifesto-copy p{margin:0 0 14px;color:var(--muted);font-size:.85rem}.site-footer{border-top:1px solid var(--line);background:rgba(0,0,0,.3)}.footer-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px;color:var(--quiet);font-size:.72rem}.footer-inner p{margin:0}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:1050px){.navbar{flex-wrap:wrap;padding-block:9px}.nav-links{display:none}.nav-tools{flex:1}.nav-search{flex:1;max-width:520px}.nav-search input{flex:1;width:auto}}
+    @media(max-width:800px){.container{width:min(var(--content),calc(100% - 36px))}.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.privacy-grid,.manifesto-box{grid-template-columns:1fr}.signal{padding-inline:10px}}
+    @media(max-width:560px){html{scroll-padding-top:132px}.container{width:calc(100% - 28px)}.navbar{min-height:auto;align-items:stretch;flex-direction:column;gap:8px;padding:9px 0}.brand{font-size:1.16rem}.brand img{width:27px;height:27px}.nav-tools{width:100%;flex:initial;gap:6px}.nav-search{width:100%;flex:1;gap:2px;padding:3px}.nav-search input{width:1%;flex:1 1 40px;padding:6px 4px;font-size:16px}.nav-search select{width:78px;flex:0 1 78px;padding:0;font-size:.68rem}.nav-search button{min-height:40px;padding:6px 7px;font-size:.74rem}.login-button{min-height:44px;padding:6px 8px;font-size:.76rem}.hero{padding:48px 0 38px}.hero::after{width:280px;height:280px;right:-190px}.eyebrow{align-items:flex-start;font-size:.64rem;letter-spacing:.07em}h1{font-size:clamp(2.5rem,12.5vw,3.7rem);overflow-wrap:anywhere}.hero-copy{margin:16px 0 19px;font-size:.9rem}.hero-actions{gap:7px}.button{min-height:41px;padding:7px 10px;font-size:.74rem}.signal-inner{grid-template-columns:1fr;padding-block:5px}.signal,.signal:first-child{min-height:58px;padding:8px 0;border-right:0;border-bottom:1px solid var(--line)}.section{padding:48px 0}.section-head{display:block;margin-bottom:16px}.section-intro{margin-top:10px;font-size:.8rem}.project-grid{grid-template-columns:1fr;gap:9px}.project-card{min-height:205px;padding:17px}.privacy-section{padding-top:8px}.privacy-grid{gap:9px}.tool-card{padding:17px 14px;border-radius:8px}.tool-top{display:block;margin-bottom:12px}.tool-card h3{font-size:.98rem}.tool-card p{font-size:.78rem}.tool-tag{display:inline-block;margin-top:7px}.tool-actions{gap:7px}.tool-actions .tool-button{flex:1 1 auto}.lookup-form{flex-wrap:wrap}.lookup-form input{flex-basis:100%;font-size:16px}.lookup-form .tool-button{width:100%}.local-row{gap:8px}.local-row output{max-width:65%}.map-frame{height:min(62vh,380px);min-height:260px}.eye-button{min-height:88px;gap:8px;padding:9px 6px;font-size:.66rem}.eye-icon{width:34px;height:34px}.manifesto{padding-bottom:44px}.manifesto-box{padding:20px 15px}.footer-inner{min-height:0;align-items:flex-start;flex-direction:column;gap:10px;padding-block:18px}}
+    @media(max-width:360px){.nav-tools{gap:4px}.nav-search select{width:68px;flex-basis:68px;font-size:.64rem}.nav-search button{padding-inline:5px;font-size:.7rem}.login-button{padding-inline:6px;font-size:.72rem}.tool-card{padding-inline:12px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Flaxware home"><img src="assets/logo.svg" alt=""><span class="brand-name">flaxware<span>.</span></span></a>
+    <div class="nav-tools"><div class="nav-links"><a href="#download">Download</a><a href="#manuals">Manuals</a><a href="#architecture">Architecture</a></div>
+      <form class="nav-search" id="searchForm" role="search"><label class="sr-only" for="query">Search the web</label><input id="query" name="q" type="search" placeholder="Search the web…" autocomplete="off" required><label class="sr-only" for="engine">Choose search engine</label><select id="engine" aria-label="Choose search engine"><option value="flaxgo">FlaxGo</option><option value="flaxgo-onion" disabled>FlaxGo .onion (address needed)</option><option value="duckduckgo">DuckDuckGo</option><option value="brave">Brave</option><option value="startpage">Startpage</option><option value="youtube">YouTube</option><option value="wikipedia">Wikipedia</option><option value="reddit">Reddit</option></select><button type="submit">Search</button></form>
+      <a class="login-button" href="https://proton.me/login" target="_blank" rel="noopener noreferrer">Login ↗</a>
+    </div>
+  </nav></header>
+  <main id="main">
+    <section class="hero" id="home"><div class="container hero-content"><p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> SYS://FLAXWARE · INDEPENDENT SOFTWARE STUDIO</p><h1>Think <span class="accent">flaxible,</span><br> do secure.</h1><p class="hero-copy">Thoughtful software and useful digital experiences-with curiosity, clarity, security, and care for the people who use them.</p><div class="hero-actions"><a class="button button-primary" href="#projects">[ Explore projects ]</a><a class="button button-secondary" href="mailto:superflax.step808@passfwd.com">[ Contact ]</a></div></div></section>
+    <section class="signal-strip" aria-label="Flaxware principles"><div class="signal-inner container"><div class="signal"><span class="signal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.5-3 7.7-7 10-4-2.3-7-5.5-7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span><span><strong>Security-minded</strong><small>Careful by design, not by slogan</small></span></div><div class="signal"><span class="signal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span><span><strong>Open and curious</strong><small>Experiments that invite exploration</small></span></div><div class="signal"><span class="signal-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h10M4 19h16"/><circle cx="18" cy="12" r="2"/></svg></span><span><strong>Made to be useful</strong><small>Less noise, more signal</small></span></div></div></section>
+    <section class="section" id="projects"><div class="container"><div class="section-head"><div><p class="section-kicker">// Selected work</p><h2 class="section-title">Ideas are <span>ideals.</span></h2></div><p class="section-intro">Tools, system work, and creative experiments from Flaxware.</p></div><div class="project-grid">
+      <article class="project-card featured"><div class="project-icon" aria-hidden="true">⌕</div><p class="project-number">01 / SEARCH</p><h3>FlaxGo</h3><p>A calm, customizable search experience with a choice of engines and no unnecessary clutter.</p><a href="https://flaxware.github.io/flaxgo">Explore FlaxGo ↗</a></article>
+      <article class="project-card"><div class="project-icon" aria-hidden="true">✦</div><p class="project-number">02 / SYSTEM</p><h3>FLAX SYSTEM</h3><p>A complete Unix-like operating system project built on the Linux kernel. Read the manual or view download instructions.</p><div class="system-actions"><a class="tool-button" href="https://github.com/flaxware/flax.system/blob/main/README.md" target="_blank" rel="noopener noreferrer">Manual ↗</a><a class="tool-button" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md" target="_blank" rel="noopener noreferrer">Full Download ↗</a></div></article>
+      <article class="project-card"><div class="project-icon" aria-hidden="true">⌘</div><p class="project-number">03 / TOOLBOX</p><h3>FlaxPlaza</h3><p>Open tools and small web projects made to help people create better things.</p><a href="https://github.com/flaxware/flaxplaza" target="_blank" rel="noopener noreferrer">Browse on GitHub ↗</a></article>
+    </div></div></section>
+    <section class="section privacy-section" id="privacy"><div class="container"><div class="section-head"><div><p class="section-kicker">// Privacy &amp; security desk</p><h2 class="section-title">Your connection, <span>your call.</span></h2></div><p class="section-intro">Optional checks, initiated only when you choose. External providers may receive connection or query data needed for their services.</p></div>
+      <div class="privacy-grid">
+        <article class="tool-card"><div class="tool-top"><div><h3>Tor connection check</h3><p>Open the Tor check page to see whether your connection uses a Tor exit relay.</p></div><span class="tool-tag">On demand</span></div><div class="terminal-output"><span class="result-light" aria-hidden="true"></span><span><strong>CHECK: The Onion Routing</strong><small>Provider evaluates your connection.</small></span></div><div class="tool-actions"><a class="tool-button" href="https://check.torproject.org/" target="_blank" rel="noopener noreferrer">Check connection ↗</a></div><p class="privacy-note">The Tor Project receives your connection IP; Flaxware does not receive or store the result.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>DNS lookup</h3><p>Open Kodachi's DNS tool for DNS and resolver diagnostics.</p></div><span class="tool-tag">External tool</span></div><div class="terminal-output"><span class="result-light" aria-hidden="true"></span><span><strong>RUN: dns-check</strong><small>Tool opens on kodachi.cloud.</small></span></div><div class="tool-actions"><a class="tool-button" href="https://kodachi.cloud/tools/dns.html" target="_blank" rel="noopener noreferrer">Open DNS tool ↗</a></div><p class="privacy-note">External website; check its privacy information for data handling details.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>IP lookup</h3><p>View public IP and related connection information with Kodachi's IP tool.</p></div><span class="tool-tag">External tool</span></div><div class="terminal-output"><span class="result-light" aria-hidden="true"></span><span><strong>RUN: ip-check</strong><small>Tool opens on kodachi.cloud.</small></span></div><div class="tool-actions"><a class="tool-button" href="https://kodachi.cloud/tools/ip.html" target="_blank" rel="noopener noreferrer">Open IP tool ↗</a></div><p class="privacy-note">The external service can see the public IP address used to connect to it.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>WHOIS lookup</h3><p>Search public domain registration details through who.is.</p></div><span class="tool-tag">Domain query</span></div><form class="lookup-form" id="whoisForm"><label class="sr-only" for="whoisDomain">Domain name for WHOIS lookup</label><input id="whoisDomain" name="domain" type="text" placeholder="example.com" autocomplete="url" required><button class="tool-button" type="submit">Look up ↗</button></form><p class="privacy-note">Your query is sent to who.is. Registration data can be redacted or unavailable.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>Email exposure checks</h3><p>Check an email address directly with breach-notification providers.</p></div><span class="tool-tag">Provider-hosted</span></div><div class="terminal-output"><span class="result-light" aria-hidden="true"></span><span><strong>MODE: provider check</strong><small>Enter an email only on the provider's site.</small></span></div><div class="tool-actions"><a class="tool-button" href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">Have I Been Pwned ↗</a><a class="tool-button" href="https://nordvpn.com/data-leak-checker/" target="_blank" rel="noopener noreferrer">NordVPN checker ↗</a></div><p class="privacy-note">This page never asks for or transmits your email. Review provider privacy terms; a clear result is not a guarantee of account safety.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>Local browser signals</h3><p>Inspect a broad set of browser, device, display, and preference values available to this page.</p></div><span class="tool-tag">Local only</span></div><div class="local-list" id="signalList" aria-live="polite"><div class="local-row"><span>Status</span><output>Not read</output></div></div><div class="tool-actions"><button class="tool-button" id="readSignals" type="button">Read local signals</button></div><p class="privacy-note">Read only after you choose. Values stay in this page and are not uploaded or saved. Some values may identify or distinguish your browser; unavailable values are shown as such. No location, camera, microphone, or other permission is requested.</p></article>
+        <article class="tool-card"><div class="tool-top"><div><h3>IP logging awareness</h3><p>IPLogger is a link-tracking service, not a privacy or security check. Links created with it can log visitors' IP addresses and related connection details.</p></div><span class="tool-tag">Tracking warning</span></div><div class="terminal-output"><span class="result-light" aria-hidden="true"></span><span><strong>NOTICE: visitor tracking</strong><small>Be cautious with unknown tracking links.</small></span></div><div class="tool-actions"><a class="tool-button" href="https://iplogger.org/" target="_blank" rel="noopener noreferrer">Visit IPLogger ↗</a></div><p class="privacy-note">This link is provided for awareness; do not use tracking links to monitor people without their knowledge and consent.</p></article>
+        <article class="tool-card map-primary"><div class="tool-top"><div><h3>Bitdefender Cyberthreat Map</h3><p>Primary live global threat visualization. It is not a local device scan or proof your device is under attack. <a href="https://cybermap.kaspersky.com/" target="_blank" rel="noopener noreferrer">View Kaspersky Cyberthreat Live Map ↗</a></p></div><span class="tool-tag">PRIMARY · LIVE</span></div><button class="eye-button" type="button" data-map="bitdefender" aria-controls="bitdefenderMap" aria-expanded="false"><svg class="eye-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 24s7-13 20-13 20 13 20 13-7 13-20 13S4 24 4 24Z" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg><span>PRESS TO VIEW BITDEFENDER MAP<br><small>Map loads here only after activation</small></span></button><iframe class="map-frame" id="bitdefenderMap" title="Bitdefender live cyber threat map" loading="lazy" referrerpolicy="no-referrer" allow="fullscreen" hidden></iframe><p class="privacy-note">The map is loaded only after activation. Bitdefender may receive connection data. <a href="https://threatmap.bitdefender.com/" target="_blank" rel="noopener noreferrer">Open map directly ↗</a></p></article>
       </div>
-    </footer>
-  </body>
+    </div></section>
+    <section class="manifesto" id="contact"><div class="container manifesto-box"><div><p class="section-kicker">//contact</p><h2>Have an idea? Let's make it <br><span>real ideal.</span></h2></div><div class="manifesto-copy"><p>Flaxware is a small technology organization turning ambitious ideas into secure, portable, flexible, perfect, efficient and general ideals.</p><p>From open-source tools to creative experiments, each project is an opportunity to learn, build with care, and make technology feel a little more human.</p><a class="button" href="mailto:superflax.step808@passfwd.com">[ Start a conversation ]</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Flaxware · Built with curiosity.</p><div class="footer-links"><a href="https://github.com/flaxware/flaxplaza" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:superflax.step808@passfwd.com">Contact</a></div></div></footer>
+  <script>
+    (() => {
+      const engines = {
+        flaxgo: "https://flaxware.github.io/flaxgo?q=",
+        flaxgoonion: "https://flaxware.github.io/flaxgo.onion/?q=",
+        duckduckgo: "https://duckduckgo.com/?q=",
+        brave: "https://search.brave.com/search?q=",
+        startpage: "https://www.startpage.com/sp/search?query=",
+        wikipedia: "https://en.wikipedia.org/w/index.php?search=",
+        youtube: "https://www.youtube.com/results?search_query=",
+        reddit: "https://www.reddit.com/search/?q="
+      };
+      const form = document.getElementById("searchForm");
+      const query = document.getElementById("query");
+      const engine = document.getElementById("engine");
+      try { const saved = localStorage.getItem("flaxgo-engine"); if (saved && engines[saved]) engine.value = saved; } catch (_) { /* Storage may be unavailable. */ }
+      engine.addEventListener("change", () => { try { localStorage.setItem("flaxgo-engine", engine.value); } catch (_) { /* Search still works this visit. */ } });
+      form.addEventListener("submit", (event) => { event.preventDefault(); const term = query.value.trim(); if (!term) { query.focus(); return; } const base = engines[engine.value]; if (base) window.location.assign(base + encodeURIComponent(term)); });
+      document.addEventListener("keydown", (event) => { const target = event.target; const typing = target instanceof HTMLElement && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)); if (event.key === "/" && !typing && !event.altKey && !event.ctrlKey && !event.metaKey) { event.preventDefault(); query.focus(); } });
+      document.querySelectorAll("[data-map]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const frame = document.getElementById("bitdefenderMap");
+          if (!frame.src) frame.src = "https://threatmap.bitdefender.com/";
+          frame.hidden = false;
+          button.setAttribute("aria-expanded", "true");
+          button.querySelector("small").textContent = "Map loaded below. Press again to focus it.";
+          if (button.dataset.activated) frame.scrollIntoView({ behavior: "smooth", block: "center" });
+          button.dataset.activated = "true";
+        });
+      });
+      const whoisInput = document.getElementById("whoisDomain");
+      document.getElementById("whoisForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const domain = whoisInput.value.trim().replace(/^https?:\/\//i, "").split(/[/?#]/)[0];
+        if (!domain || !/^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(domain)) { whoisInput.setCustomValidity("Enter a domain such as example.com."); whoisInput.reportValidity(); return; }
+        whoisInput.setCustomValidity("");
+        window.open("https://who.is/whois/" + encodeURIComponent(domain), "_blank", "noopener,noreferrer");
+      });
+      whoisInput.addEventListener("input", (event) => event.currentTarget.setCustomValidity(""));
+      document.getElementById("readSignals").addEventListener("click", () => {
+        const list = document.getElementById("signalList");
+        const rows = [];
+        const add = (label, value) => rows.push([label, value === undefined || value === null || value === "" ? "Not available" : String(value)]);
+        const preference = (query) => { try { return window.matchMedia(query).matches ? "Yes" : "No"; } catch (_) { return "Not available"; } };
+        const number = (value) => Number.isFinite(value) ? value : "Not available";
+        let timezone = "Not available", locale = "Not available";
+        try { const date = Intl.DateTimeFormat(); timezone = date.resolvedOptions().timeZone || timezone; locale = date.resolvedOptions().locale || locale; } catch (_) { /* Intl may be unavailable. */ }
+        let storage = "Not available";
+        try { storage = typeof navigator.storage?.estimate === "function" ? "Available" : "Not exposed"; } catch (_) { storage = "Unavailable"; }
+        add("Browser user agent", navigator.userAgent);
+        add("Platform", navigator.userAgentData?.platform || navigator.platform);
+        add("Browser vendor", navigator.vendor);
+        add("Preferred language", navigator.language);
+        add("All languages", navigator.languages?.join(", "));
+        add("Locale", locale);
+        add("Time zone", timezone);
+        add("UTC offset", `UTC${new Date().getTimezoneOffset() <= 0 ? "+" : "−"}${Math.floor(Math.abs(new Date().getTimezoneOffset()) / 60).toString().padStart(2, "0")}:${(Math.abs(new Date().getTimezoneOffset()) % 60).toString().padStart(2, "0")}`);
+        add("Cookies enabled", navigator.cookieEnabled ? "Yes" : "No");
+        add("Browser online status", navigator.onLine ? "Online" : "Offline");
+        add("Do Not Track", navigator.doNotTrack || window.doNotTrack || "Not set");
+        add("Hardware concurrency (logical cores)", navigator.hardwareConcurrency);
+        add("Device memory (GB, approximate)", navigator.deviceMemory);
+        add("Touch points", navigator.maxTouchPoints);
+        add("PDF viewer enabled", navigator.pdfViewerEnabled === undefined ? "Not exposed" : navigator.pdfViewerEnabled ? "Yes" : "No");
+        add("Storage API", storage);
+        add("Screen size", `${screen.width} × ${screen.height} CSS px`);
+        add("Available screen area", `${screen.availWidth} × ${screen.availHeight} CSS px`);
+        add("Viewport size", `${window.innerWidth} × ${window.innerHeight} CSS px`);
+        add("Device pixel ratio", window.devicePixelRatio);
+        add("Screen color depth", `${screen.colorDepth}-bit`);
+        add("Screen pixel depth", `${screen.pixelDepth}-bit`);
+        add("Orientation", screen.orientation?.type || "Not exposed");
+        add("Color scheme: dark", preference("(prefers-color-scheme: dark)") === "Yes" ? "Preferred" : preference("(prefers-color-scheme: light)") === "Yes" ? "Light preferred" : "No preference / unavailable");
+        add("Reduced motion", preference("(prefers-reduced-motion: reduce)"));
+        add("High contrast", preference("(prefers-contrast: more)"));
+        add("Forced colors", preference("(forced-colors: active)"));
+        add("Pointer type: coarse", preference("(pointer: coarse)"));
+        add("Hover support", preference("(hover: hover)"));
+        const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        add("Connection type", connection?.type);
+        add("Connection effective type", connection?.effectiveType);
+        add("Estimated downlink (Mbps)", connection?.downlink);
+        add("Estimated round-trip time (ms)", connection?.rtt);
+        add("Data saver preference", connection?.saveData === undefined ? "Not exposed" : connection.saveData ? "On" : "Off");
+        if (typeof navigator.getBattery === "function") add("Battery API", "Supported; not queried");
+        else add("Battery API", "Not exposed");
+        list.replaceChildren(...rows.map(([label, value]) => {
+          const row = document.createElement("div"); row.className = "local-row";
+          const name = document.createElement("span"); name.textContent = label;
+          const output = document.createElement("output"); output.textContent = value;
+          row.append(name, output); return row;
+        }));
+      });
+    })();
+  </script>
+</body>
 </html>
