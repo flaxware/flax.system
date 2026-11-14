@@ -1,102 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#080610">
-  <meta name="description" content="FLAX SYSTEM - a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing.">
-  <meta property="og:title" content="FLAX SYSTEM - Flaxware">
-  <meta property="og:description" content="Install and explore FLAX SYSTEM's ideals, architecture, and manuals.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://flaxware.github.io/flax.system/">
-  <link rel="icon" href="https://flaxware.github.io/assets/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="https://flaxware.github.io/assets/logo.png">
-  <link rel="icon" type="image/svg+xml" href="https://flaxware.github.io/assets/logo.svg">
-  <link rel="canonical" href="https://flaxware.github.io/flax.system/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>FLAX SYSTEM - Flaxware</title>
-  <style>
-    :root{color-scheme:dark;--bg:#080610;--panel:rgba(19,12,35,.78);--text:#fbf8ff;--muted:#ccbde0;--quiet:#a28db9;--line:rgba(178,106,255,.34);--green:#39ff14;--purple:#b26aff;--content:1160px}
-    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px;-webkit-text-size-adjust:100%}body{margin:0;min-width:320px;overflow-x:hidden;color:var(--text);background:radial-gradient(ellipse at 82% 4%,rgba(124,53,255,.17),transparent 38rem),var(--bg);font:16px/1.65 "Space Grotesk",sans-serif}a{color:inherit;text-decoration:none}.container{width:min(var(--content),calc(100% - 48px));margin-inline:auto}.skip-link{position:fixed;z-index:100;top:12px;left:12px;padding:10px 14px;border-radius:8px;background:var(--green);color:#080610;transform:translateY(-160%)}.skip-link:focus{transform:translateY(0)}
-    .site-header{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:rgba(8,6,16,.9);backdrop-filter:blur(20px) saturate(170%)}.navbar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px}.brand{display:inline-flex;align-items:center;gap:10px;font-size:1.16rem;font-weight:700;letter-spacing:-.05em}.brand img{width:32px;height:32px;object-fit:contain}.brand-name>span{color:var(--green)}.nav-links{display:flex;align-items:center;gap:clamp(14px,3vw,34px)}.nav-links a{color:var(--muted);font-size:.9rem}.nav-links a:hover,.footer-links a:hover{color:var(--green)}
-    .hero{position:relative;overflow:hidden;padding:clamp(64px,10vw,128px) 0 74px}.hero::after{position:absolute;z-index:-1;content:"";width:390px;height:390px;right:-110px;top:6%;border:1px solid var(--line);border-radius:50%;box-shadow:0 0 100px rgba(178,106,255,.16),inset 0 0 90px rgba(178,106,255,.08)}.eyebrow,.section-kicker,.project-number{color:var(--green);font:500 .72rem/1.5 "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase}.eyebrow{display:flex;align-items:center;gap:10px}.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}h1{max-width:900px;margin:18px 0;font-size:clamp(3rem,8vw,6.6rem);letter-spacing:-.075em;line-height:.98}h1 span,.section-title span{color:#c49aff}.hero-sub{max-width:700px;color:var(--muted);font-size:clamp(1rem,2vw,1.18rem)}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;border:1px solid var(--line);border-radius:8px;font-weight:600;transition:transform .2s ease,border-color .2s ease,background .2s ease}.button:hover{transform:translateY(-2px);border-color:var(--green)}.button.primary{border-color:transparent;background:linear-gradient(110deg,#8d4cff,#c16dff);color:#fff}.hero-note{margin-top:18px;color:var(--quiet);font-size:.88rem}
-    .signal-strip{border-block:1px solid var(--line);background:rgba(26,12,44,.44)}.signal-inner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-block:20px}.signal{display:flex;align-items:center;gap:12px}.signal-icon{color:var(--green);font-size:1.25rem}.signal strong,.signal small{display:block}.signal small{color:var(--muted);font-size:.8rem}
-    .section{padding:clamp(52px,7vw,82px) 0;border-bottom:1px solid rgba(178,106,255,.2)}.section-head{max-width:850px;margin-bottom:26px}.section-kicker{margin:0 0 8px}.section-title{margin:0;font-size:clamp(2rem,4.7vw,3.55rem);letter-spacing:-.065em;line-height:1.05}.section-lead{max-width:760px;margin:14px 0 0;color:var(--muted)}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.project-card{min-width:0;padding:24px;border:1px solid rgba(178,106,255,.42);border-radius:14px;background:linear-gradient(145deg,rgba(43,19,74,.64),rgba(19,12,35,.72));transition:transform .2s ease,border-color .2s ease}.project-card:hover{transform:translateY(-4px);border-color:var(--green)}.project-number{margin:0 0 12px;color:#c49aff}.project-card h3{margin:0 0 8px;font-size:1.25rem}.project-card p:not(.project-number){margin:0;color:var(--muted);font-size:.94rem}.link-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.hero-note a,.link-row a:not(.button){color:#c49aff;text-decoration:underline;text-underline-offset:3px}.manual-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 26px;margin:0;padding:0;list-style:none}.feature-list li{padding:14px 0;border-bottom:1px solid var(--line);color:var(--muted)}.feature-list strong{display:block;margin-bottom:4px;color:var(--text)}.roadmap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:24px}.phase{padding:18px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.phase strong,.phase span{display:block}.phase span{margin-top:6px;color:var(--muted);font-size:.9rem}.verify-panel{padding:clamp(20px,4vw,32px);border:1px solid rgba(57,255,20,.3);border-radius:14px;background:linear-gradient(135deg,rgba(28,30,27,.56),rgba(22,14,34,.78))}.verify-panel h3{margin:0 0 8px}.verify-panel p{margin:0;color:var(--muted)}
-    .manifesto{padding:54px 0}.manifesto-box{padding:clamp(22px,5vw,42px);border:1px solid var(--line);border-radius:16px;background:linear-gradient(130deg,rgba(43,19,74,.7),rgba(19,12,35,.72))}.manifesto-box h2{margin:0;font-size:clamp(1.7rem,4vw,2.7rem);letter-spacing:-.05em}.manifesto-box h2 span{color:#c49aff}.site-footer{padding:24px 0 36px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px}.footer-links{display:flex;gap:18px}.footer-links a{color:#c49aff}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    @media(max-width:800px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.roadmap{grid-template-columns:repeat(2,minmax(0,1fr))}.signal-inner{grid-template-columns:1fr;gap:12px}.signal small{display:inline}.feature-list{grid-template-columns:1fr}}
-    @media(max-width:560px){.container{width:calc(100% - 32px)}.navbar{align-items:flex-start;flex-direction:column;gap:4px;padding-block:12px}.nav-links{width:100%;justify-content:space-between;gap:10px}.nav-links a{font-size:.8rem}.project-grid,.roadmap{grid-template-columns:1fr}.section{padding-block:48px}.footer-inner{align-items:flex-start;flex-direction:column}.hero{padding-top:62px}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
-  </style>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><nav class="navbar container" aria-label="Main navigation">
-    <a class="brand" href="#home" aria-label="FLAX SYSTEM home"><img src="https://flaxware.github.io/assets/logo.svg" alt=""><span class="brand-name">flaxware<span>.</span></span></a>
-    <div class="nav-links"><a href="#download">Download</a><a href="#manuals">Manuals</a><a href="#architecture">Architecture</a></div>
-  </nav></header>
-  <main id="main">
-    <section class="hero" id="home"><div class="container hero-content">
-      <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FLAXWARE · FLAX SYSTEM</p>
-      <h1>A system for secure, <span>everyday computing.</span></h1>
-      <p class="hero-sub">FlaxOS is a Unix-like operating system project exploring security, privacy, flexibility, and general-purpose usability. Its goal is to make thoughtful security concepts accessible for everyday computing.</p>
-      <div class="hero-actions"><a class="button primary" href="#download">Download ↗</a><a class="button" href="#architecture">Architecture</a></div>
-      <p class="hero-note">Check official download instructions for current builds and availability before installing.</p>
-    </div></section>
-    <section class="signal-strip" aria-label="Project principles"><div class="signal-inner container">
-      <div class="signal"><span class="signal-icon" aria-hidden="true">✦</span><div><strong>Security-minded</strong><small>Layered protections and clear security goals</small></div></div>
-      <div class="signal"><span class="signal-icon" aria-hidden="true">⌘</span><div><strong>Structured</strong><small>Modular components and hierarchical organization</small></div></div>
-      <div class="signal"><span class="signal-icon" aria-hidden="true">◈</span><div><strong>For everyday use</strong><small>Privacy goals alongside general-purpose computing</small></div></div>
-    </div></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#080610" />
+    <meta name="description" content="FLAX SYSTEM - a security-first operating system project by Flaxware, focused on privacy, flexibility, and everyday computing." />
+    <meta property="og:title" content="FLAX SYSTEM - Flaxware" />
+    <meta property="og:description" content="Install and explore FLAX SYSTEM's ideals, architecture, and manuals." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flaxware.github.io/flax.system/" />
+    <link rel="icon" href="https://flaxware.github.io/assets/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="https://flaxware.github.io/assets/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="https://flaxware.github.io/assets/logo.svg" />
+    <link rel="canonical" href="https://flaxware.github.io/flax.system/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>FLAX SYSTEM - Flaxware</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="logo" href="#home" aria-label="FLAX SYSTEM home">
+          <img src="https://flaxware.github.io/assets/logo.svg" alt="" />
+          <span>flaxware<span>.</span></span>
+        </a>
 
-    <section class="section" id="download"><div class="container">
-      <div class="section-head"><p class="section-kicker">// Get FLAX SYSTEM</p><h2 class="section-title">Downloads and <span>release information.</span></h2><p class="section-lead">Use the official download instructions for current builds, availability, and installation information.</p></div>
-      <div class="link-row"><a class="button primary" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Open official downloads ↗</a><a class="button" href="https://github.com/flaxware/flax.system/releases">View releases ↗</a></div>
-    </div></section>
+        <div class="nav-links">
+          <a href="#download">Download</a>
+          <a href="#manuals">Manuals</a>
+          <a href="#architecture">Architecture</a>
+          <a class="nav-button" href="https://github.com/flaxware/flax.system" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </nav>
+    </header>
 
-    <section class="section" id="manuals"><div class="container">
-      <div class="section-head"><p class="section-kicker">// Manuals and project docs</p><h2 class="section-title">Read the docs. <span>Follow the work.</span></h2><p class="section-lead">Browse the project documentation, installation notes, and development plans.</p></div>
-      <div class="manual-links"><a class="button primary" href="https://github.com/flaxware/flax.system/blob/main/README.md">System manual ↗</a><a class="button" href="https://github.com/flaxware/flax.system/blob/main/README-IDOL.md">Project ideals ↗</a><a class="button" href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">Roadmap ↗</a></div>
-    </div></section>
+    <main id="main">
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FLAXWARE · FLAX SYSTEM</p>
+          <h1>A system for secure, <span>everyday computing.</span></h1>
+          <p class="hero-text">
+            FlaxOS is a Unix-like operating system project exploring security, privacy,
+            flexibility, and general-purpose usability. Its goal is to make thoughtful
+            security concepts accessible for everyday computing.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Download</a>
+            <a class="button button-secondary" href="#architecture">Architecture</a>
+          </div>
+          <p class="hero-note">Check official download instructions for current builds and availability before installing.</p>
+        </div>
+      </section>
 
-    <section class="section" id="architecture"><div class="container">
-      <div class="section-head"><p class="section-kicker">// System architecture</p><h2 class="section-title">A layered approach to <span>security and usability.</span></h2><p class="section-lead">FLAX SYSTEM explores a modular, Unix-inspired design with security and everyday usability in mind.</p></div>
-      <div class="project-grid">
-        <article class="project-card"><p class="project-number">Security center</p><h3>FlaxDefender</h3><p>Anti-virus, cleaner, system monitoring, and security awareness.</p></article>
-        <article class="project-card"><p class="project-number">Isolation</p><h3>FlaxBox</h3><p>Knox-like and Qubes OS inspired encrypted workspaces and isolation layer for containers, virtual machines, and applications.</p></article>
-        <article class="project-card"><p class="project-number">Networking</p><h3>FlaxNet</h3><p>Network layer, firewall management, gateway concepts including optional TOR or VPN routing, traffic filtering and control.</p></article>
-        <article class="project-card"><p class="project-number">Browser</p><h3>Fenyx</h3><p>Firefox-based browser with TOR, VPN, ad-blocking and strict privacy focused settings.</p></article>
-        <article class="project-card"><p class="project-number">Desktop</p><h3>Nitro</h3><p>XFCE-based desktop environment with focus on being user friendly and security-first.</p></article>
-        <article class="project-card"><p class="project-number">Blueprint</p><h3>Unix-inspired design</h3><p>Plain-text configuration, hierarchical organization, explicit permissions, privilege separation, and modular components.</p></article>
+      <section class="signal-strip" aria-label="Project principles">
+        <div class="signal-inner container">
+          <div class="signal">
+            <span class="signal-icon" aria-hidden="true">✦</span>
+            <div>
+              <strong>Security-minded</strong>
+              <small>Layered protections and clear security goals</small>
+            </div>
+          </div>
+          <div class="signal">
+            <span class="signal-icon" aria-hidden="true">⌘</span>
+            <div>
+              <strong>Structured</strong>
+              <small>Modular components and hierarchical organization</small>
+            </div>
+          </div>
+          <div class="signal">
+            <span class="signal-icon" aria-hidden="true">◈</span>
+            <div>
+              <strong>For everyday use</strong>
+              <small>Privacy goals alongside general-purpose computing</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// The project</p>
+              <h2>More than a theme. <span>A system in progress.</span></h2>
+            </div>
+            <p class="section-description">
+              The project explores a modern operating system concept built around privacy,
+              usability, and explicit security choices.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy">
+              <p>
+                FLAX SYSTEM is a security-first operating system concept focused on privacy,
+                flexibility, and everyday computing. It combines a Unix-inspired design with
+                a practical approach to system structure, isolation, and user control.
+              </p>
+              <p>
+                The goal is not only to make a technically secure system, but to make secure
+                defaults understandable, reasonable, and usable for daily work.
+              </p>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card featured">
+                <div class="project-icon" aria-hidden="true">⌕</div>
+                <p class="project-number">01 / General</p>
+                <h3>Everyday computing</h3>
+                <p>Aims to support common computing needs with a practical and approachable experience.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-icon" aria-hidden="true">◈</div>
+                <p class="project-number">02 / Privacy</p>
+                <h3>Control and isolation</h3>
+                <p>Explores compartmentalization, clear security boundaries, and stronger user control.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-icon" aria-hidden="true">⌘</div>
+                <p class="project-number">03 / Choice</p>
+                <h3>Flexible workflows</h3>
+                <p>Project documentation describes modular components, plain-text configuration, and adaptable workflows.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="architecture">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// System architecture</p>
+              <h2>A layered approach to <span>security and usability.</span></h2>
+            </div>
+            <p class="section-description">
+              FLAX SYSTEM explores a modular, Unix-inspired design with layered protection and clear responsibilities.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-number">Security center</p>
+              <h3>FlaxDefender</h3>
+              <p>Anti-virus, cleaner, system monitoring, and security awareness.</p>
+            </article>
+            <article class="project-card">
+              <p class="project-number">Isolation</p>
+              <h3>FlaxBox</h3>
+              <p>Knox-like and Qubes OS inspired encrypted workspaces and isolation layer for containers, virtual machines, and applications.</p>
+            </article>
+            <article class="project-card">
+              <p class="project-number">Networking</p>
+              <h3>FlaxNet</h3>
+              <p>Network layer, firewall management, gateway concepts including optional TOR or VPN routing, traffic filtering and control.</p>
+            </article>
+            <article class="project-card">
+              <p class="project-number">Browser</p>
+              <h3>Fenyx</h3>
+              <p>Firefox-based browser with TOR, VPN, ad-blocking and strict privacy focused settings.</p>
+            </article>
+            <article class="project-card">
+              <p class="project-number">Desktop</p>
+              <h3>Nitro</h3>
+              <p>XFCE-based desktop environment with focus on being user friendly and security-first.</p>
+            </article>
+            <article class="project-card">
+              <p class="project-number">Blueprint</p>
+              <h3>Unix-inspired design</h3>
+              <p>Plain-text configuration, hierarchical organization, explicit permissions, privilege separation, and modular components.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// Project ideals</p>
+              <h2>Designed around <span>clear principles.</span></h2>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li><strong>General</strong>Designed for every purpose with everyday computing in mind.</li>
+            <li><strong>Efficient</strong>Keep the system lightweight and stable, old hardware becomes modern new.</li>
+            <li><strong>Perfect</strong>Fully configured out of the box, no need to mess around.</li>
+            <li><strong>Flexible</strong>Plain text is sacred, structure is natural.</li>
+            <li><strong>Portable</strong>Modular components like bricks building hierarchy, organize components so they can be maintained and reused.</li>
+            <li><strong>Safe</strong>Security is built in, not optional.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="status">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// Development</p>
+              <h2>An evolving <span>project.</span></h2>
+            </div>
+            <p class="section-description">FLAX SYSTEM is under development. Follow the roadmap for goals and progress.</p>
+          </div>
+
+          <div class="roadmap" aria-label="Roadmap summary">
+            <div class="phase"><strong>2026 · Foundation</strong><span>Architecture, project structure, and initial system design.</span></div>
+            <div class="phase"><strong>Development</strong><span>Build and refine the system's core components.</span></div>
+            <div class="phase"><strong>Future</strong><span>Continue toward a useful, security-minded operating system.</span></div>
+          </div>
+
+          <p class="hero-note">Timeline items are roadmap goals, not release promises. See the <a href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">official roadmap ↗</a>.</p>
+        </div>
+      </section>
+
+      <section class="section" id="download">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// Get FLAX SYSTEM</p>
+              <h2>Downloads and <span>release information.</span></h2>
+            </div>
+            <p class="section-description">Use the official download instructions for current builds, availability, and installation information.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/flaxware/flax.system/blob/main/DOWNLOAD.md">Open official downloads ↗</a>
+            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/releases">View releases ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="verify">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// Verify before installing</p>
+              <h2>Trust the artifact, <span>not just the link.</span></h2>
+            </div>
+          </div>
+          <div class="verify-panel">
+            <h3>Use verification data published for that exact build</h3>
+            <p>Before installing an image, check the official download page for a checksum or cryptographic signature. Verify it using trusted tools and instructions for your platform.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="manuals">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">// Manuals and project docs</p>
+              <h2>Read the docs. <span>Follow the work.</span></h2>
+            </div>
+            <p class="section-description">Browse the project documentation, installation notes, and development plans.</p>
+          </div>
+
+          <div class="manual-links">
+            <a class="button button-primary" href="https://github.com/flaxware/flax.system/blob/main/README.md">System manual ↗</a>
+            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/blob/main/README-IDOL.md">Project ideals ↗</a>
+            <a class="button button-secondary" href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">Roadmap ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="manifesto" id="contact">
+        <div class="container manifesto-box">
+          <div>
+            <p class="section-kicker">// FLAXWARE · FLAX SYSTEM</p>
+            <h2>Built with curiosity. <span>Designed with intent.</span></h2>
+          </div>
+          <div class="manifesto-copy">
+            <p>Explore the project, read the documentation, and follow development on GitHub.</p>
+            <div class="hero-actions"><a class="button button-primary" href="https://github.com/flaxware/flax.system">Visit GitHub ↗</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Flaxware · FLAX SYSTEM</span>
+        <div class="footer-links">
+          <a href="https://github.com/flaxware/flax.system">GitHub</a>
+          <a href="https://flaxware.github.io/">Flaxware</a>
+        </div>
       </div>
-    </div></section>
-
-    <section class="section" id="ideals"><div class="container">
-      <div class="section-head"><p class="section-kicker">// Project ideals</p><h2 class="section-title">Designed around <span>clear principles.</span></h2></div>
-      <ul class="feature-list">
-        <li><strong>General</strong>Designed for every purpose with everyday computing in mind.</li>
-        <li><strong>Efficient</strong>Keep the system lightweight and stable, old hardware becomes modern new.</li>
-        <li><strong>Perfect</strong>Fully configured out of the box, no need to mess around.</li>
-        <li><strong>Flexible</strong>Plain text is sacred, structure is natural.</li>
-        <li><strong>Portable</strong>Modular components like bricks building hierarchy, organize components so they can be maintained and reused.</li>
-        <li><strong>Safe</strong>Security is built in, not optional.</li>
-      </ul>
-    </div></section>
-
-    <section class="section" id="status"><div class="container">
-      <div class="section-head"><p class="section-kicker">// Development</p><h2 class="section-title">An evolving <span>project.</span></h2><p class="section-lead">FLAX SYSTEM is under development. Follow the roadmap for project goals and progress.</p></div>
-      <div class="roadmap" aria-label="Roadmap summary"><div class="phase"><strong>2026 · Foundation</strong><span>Architecture, project structure, and initial system design.</span></div><div class="phase"><strong>Development</strong><span>Build and refine the system's core components.</span></div><div class="phase"><strong>Future</strong><span>Continue toward a useful, security-minded operating system.</span></div></div>
-      <p class="hero-note">Timeline items are roadmap goals, not release promises. See the <a href="https://github.com/flaxware/flax.system/blob/main/ROADMAP.md">official roadmap ↗</a>.</p>
-    </div></section>
-
-    <section class="section" id="verify"><div class="container">
-      <div class="section-head"><p class="section-kicker">// Verify before installing</p><h2 class="section-title">Trust the artifact, <span>not just the link.</span></h2></div>
-      <div class="verify-panel"><h3>Use verification data published for that exact build</h3><p>Before installing an image, check the official download page for a checksum or cryptographic signature. Verify it using trusted tools and instructions for your platform.</p></div>
-    </div></section>
-
-    <section class="manifesto" id="contact"><div class="container manifesto-box"><p class="section-kicker">// FLAXWARE · FLAX SYSTEM</p><h2>Built with curiosity. <span>Designed with intent.</span></h2><p class="section-lead">Explore the project, read the documentation, and follow development on GitHub.</p><div class="manual-links"><a class="button primary" href="https://github.com/flaxware/flax.system">Visit GitHub ↗</a></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Flaxware · FLAX SYSTEM</span><div class="footer-links"><a href="https://github.com/flaxware/flax.system">GitHub</a><a href="https://flaxware.github.io/">Flaxware</a></div></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
